@@ -3,11 +3,14 @@ layout: default
 title: blog.bojie.info
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
+{% include header.md %}
+##   近期
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    * {{ post.date | date_to_string }} [{{ post.title }} ({{ post.url }}) 
     {% endfor %}
-  </ul>
-</div>
+
+##   分类
+
+
+{% include footer.md %}
+    
