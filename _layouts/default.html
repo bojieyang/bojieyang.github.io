@@ -6,20 +6,23 @@
 	<link rel="stylesheet" href="http://cdn.staticfile.org/typo.css/1.1/typo.min.css" type="text/css" media="screen" charset="utf-8"/>
 	<style>
 		#wrapper{ padding:5% 10%; position:relative;}
+		#tagline{ color:#999; font-size:1em; margin:-2em 0 2em; padding-bottom:2em; border-bottom:3px double #eee; }
 	</style>
   </head>
   <body>
     <div id='wrapper' class='typo'>
-      <div id='header'>
-        <h3><a href="/">首页</a></h1>
-      </div>
-      <div id='content'>
+      <header>
+        <h1>关于兴趣爱好的随笔</h1>
+		<br>
+		<h2 id="tagline">我写的，可能都是错的！</h2>
+      </header>
+      <section id='content'>
         {{ content }}
 		<div class='clearfix'></div>
-      </div>
-	  <div id='footer'>
+      </section>
+	  <footer>
 	  版权声明：自由转载-非商用-非衍生-保持署名（<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可</a>）
-	  </div>
+	  </footer>
    </div>
     
   <script>
