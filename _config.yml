@@ -1,3 +1,4 @@
 timezone: Asia/Shanghai
 permalink: /:year/:month/:day/:title.html
 auto: true
+server: true
