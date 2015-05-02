@@ -1,3 +1,4 @@
+encoding: UTF-8
 timezone: Asia/Shanghai
 permalink: /:year/:month/:day/:title.html
 auto: true
