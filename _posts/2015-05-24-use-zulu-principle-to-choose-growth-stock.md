@@ -1,11 +1,13 @@
 ---
 layout: post
 title: 使用祖鲁法则选择成长股
-categories: [投资]
-tags: [祖鲁法则, 成长股]
+categories: [Invest]
+tags: [Zulu Principle, Growth Stock]
 ---
+
 祖鲁法则定义了选择成长股的七大标准。使用这些方法能够帮助我们更好的挑选出成长股。
 <!--more-->
+
 ### 标准一: PEG
 
 ### 标准二: 现金流

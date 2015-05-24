@@ -17,10 +17,10 @@
       <header>
         <h1><a href='/'>{{ page.title }}</a></h1>
 		<br>
-		<h2 id="tagline"> {{ post.excerpt }}</h2>
+		<h2 id="tagline"> {{ page.excerpt }}</h2>
       </header>
       <section id='content'>
-        {{ content }}
+        {{ content | strip_html }}
 		<div class='clearfix'></div>
       </section>
 	  <footer>
