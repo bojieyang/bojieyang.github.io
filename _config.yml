@@ -1,6 +1,7 @@
 encoding: UTF-8
 timezone: Asia/Shanghai
-permalink: /:categories/:title.html
+permalink: /:year/:month/:day/:title.html
 excerpt_separator: <!--more-->
+markdown: kramdown
 auto: true
 server: true
