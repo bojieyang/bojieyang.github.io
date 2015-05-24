@@ -17,10 +17,10 @@
       <header>
         <h1><a href='/'>{{ page.title }}</a></h1>
 		<br>
-		<h2 id="tagline"> {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</h2>
+		<h2 id="tagline"> {{ page.tags | array_to_sentence_string }} </h2>
       </header>
       <section id='content'>
-        {{ content | markdownify  | strip_html }}
+        {{ content }}
 		<div class='clearfix'></div>
       </section>
 	  <footer>
