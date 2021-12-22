@@ -5,3 +5,4 @@ excerpt_separator: <!--more-->
 markdown: kramdown
 auto: true
 server: true
+theme: jekyll-theme-minimal
