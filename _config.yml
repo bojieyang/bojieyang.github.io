@@ -1,8 +1,14 @@
 encoding: UTF-8
 timezone: Asia/Shanghai
-permalink: /:year/:month/:day/:title.html
+permalink: /:year/:month//:title
 excerpt_separator: <!--more-->
 markdown: kramdown
 auto: true
 server: true
-theme: jekyll-theme-minimal
+google_analytics: UA-62508887-1
+# set up remote_theme
+remote_theme: jekyll/minima
+
+# Add to plugins: list
+plugins:
+  - jekyll-remote-theme
