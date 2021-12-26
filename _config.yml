@@ -34,7 +34,8 @@ server: true
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: no-style-please
+#theme: no-style-please
+remote_theme: riggraz/no-style-please
 theme_config:
   appearance: "auto" # can be "light", "dark" or "auto"
   back_home_text: ".." # customize text for homepage link in post layout
@@ -46,6 +47,7 @@ theme_config:
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
