@@ -18,13 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: JieTalk
+title: 博杰的随笔
 description: 我的一些观点和感悟
 author:
-  name: JieTalk
+  name: bojieyang
 
 timezone: Asia/Shanghai
-permalink: /:year/:month/:title:output_ext
+#permalink: /:year/:month/:title:output_ext
+permalink: /:slug:output_ext
 excerpt_separator: <!--more-->
 auto: true
 server: true
@@ -33,21 +34,18 @@ server: true
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-#theme: minima
-remote_theme: jekyll/minima
+theme: no-style-please
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: ".." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description in home page
 
-minima:
-  date_format: "%Y-%m-%d"
-
-google_analytics: UA-62508887-1
-
-header_pages:
-  - about.md
+#google_analytics: UA-62508887-1
 
 
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
