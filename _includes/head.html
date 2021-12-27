@@ -14,7 +14,7 @@
     {%-seo title=false-%}
     {%-feed_meta-%}
     
-    {%- if jekyll.environment == 'production' and site.google_analytics  and process.env.VERCEL != '1' -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
         {%- include google-analytics.html -%}
     {%- endif -%}
 
