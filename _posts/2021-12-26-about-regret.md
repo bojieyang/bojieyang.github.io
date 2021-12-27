@@ -1,5 +1,4 @@
 ---
-lang: zh-CN
 layout: post
 title: 关于后悔
 ---

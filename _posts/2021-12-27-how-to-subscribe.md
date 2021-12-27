@@ -1,5 +1,4 @@
 ---
-lang: zh-CN
 layout: page
 title: 如何订阅
 ---
