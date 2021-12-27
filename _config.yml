@@ -18,13 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 博杰的随笔
-author:
-  name: bojieyang
+title: 博杰の随笔
 
 timezone: Asia/Shanghai
 #permalink: /:year/:month/:title:output_ext
-permalink: /:slug:output_ext
+permalink: /articles/:slug:output_ext
 excerpt_separator: <!--more-->
 auto: true
 server: true

@@ -11,9 +11,9 @@ entries:
 
   - title: 文章分类
     post_list:
-      category: '人生感悟'
+      category: '读书心得'
       show_more: true
-      show_more_text: See more posts...
+      show_more_text: 查看更多
 
   - title: 如何订阅
     url: how-to-subscribe.html
