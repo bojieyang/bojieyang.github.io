@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: "zh-CN" }}">
+<html lang="{{ page.lang | default: 'zh-CN' }}">
   {%- include head.html -%}
-  <body a="{{ site.theme_config.appearance | default: "auto" }}">
+  <body a="{{ site.theme_config.appearance | default: 'auto' }}">
     <main class="page-content" aria-label="Content">
       <div class="w">
         {{ content }}
@@ -11,6 +11,10 @@
     {%-if site.goat_counter and jekyll.environment == "production"-%}
       {%-include goat_counter.html-%}
     {%-endif-%}
+
+    {%- if site.flag_counter and jekyll.environment == "production" -%}
+        {%- include flag-counter.html -%}
+    {%- endif -%}
 
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}

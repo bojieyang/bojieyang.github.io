@@ -26,6 +26,7 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', '~> 1.4'
   gem "jekyll-remote-theme", '~>0.4.3'
   gem 'kramdown-parser-gfm', '~> 1.1'
+  gem 'jemoji', '~> 0.12.0'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

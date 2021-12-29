@@ -1,0 +1,9 @@
+---
+---
+
+@import "no-style-please";
+#markdown-toc::before {
+    content: "目录";
+    font-family: inherit;
+    font-weight: bold;
+}
