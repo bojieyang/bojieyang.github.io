@@ -2,14 +2,14 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: 最近更新
+  - title: 🏷️最近更新
     post_list:
       limit: 5
       show_more: true
       show_more_text: See archive...
       show_more_url: archive.html
 
-  - title: 文章分类
+  - title: 🏷️读书心得
     post_list:
       category: '读书心得'
       show_more: true
