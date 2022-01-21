@@ -1,0 +1,16 @@
+<article>
+    <aside>
+        <h3>{{ entry.title }}</h3>
+            {% if entry.subtitle  %}
+            <small>{{ entry.subtitle }}</small>  
+            {% endif %} 
+    </aside>
+</article>
+
+{% if entry.category %} 
+    {%-assign posts = site.categories[entry.category]-%} 
+        {%-else-%} 
+    {%-assign posts = site.posts-%}
+{% endif %}
+
+{%-include cards.html posts=posts -%}

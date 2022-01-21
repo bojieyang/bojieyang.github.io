@@ -1,0 +1,7 @@
+{% if posts.size > 0 %}
+<section>
+    {% for post in posts %}
+        {%-include card.html post=post -%}
+    {% endfor %}
+</section>
+{% endif %}
