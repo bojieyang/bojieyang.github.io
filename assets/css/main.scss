@@ -1,13 +1,48 @@
 ---
 ---
 
-@import "no-style-please";
+@import "mvp.css";
 #markdown-toc::before {
     content: "目录";
     font-family: inherit;
     font-weight: bold;
 }
+:root {
+    --font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
 
-body {
-    font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+aside a {
+    text-decoration: none; 
+    color: inherit;
+    font-weight:normal;
+}
+
+aside a:hover {
+    text-decoration: none; 
+    color: inherit;
+}
+
+aside h1,
+aside h2,
+aside h3,
+aside h4,
+aside h5,
+aside h6 {
+    /*margin-block-end: 0.3em;*/
+    line-height: calc(var(--line-height) / 5);
+}
+
+aside h3 + small {
+    line-height: calc(var(--line-height) / 5);
+}
+
+/* card 下的 mark标签 用作 tag */
+section aside mark {
+    font-size: small;
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius);
+    color: var(--color-text);
+    display: inline-block;
+    margin: 0 0.2rem;
+    padding: 0 0.4rem;
 }

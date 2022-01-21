@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 博杰の随笔
+title: JieTalk
 
 timezone: Asia/Shanghai
 #permalink: /:year/:month/:title:output_ext
@@ -32,22 +32,27 @@ server: true
 
 # Build settings
 #theme: no-style-please
-remote_theme: riggraz/no-style-please
-theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
-  back_home_text: ".." # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: true # show blog description in home page
+#remote_theme: riggraz/no-style-please
+#theme_config:
+#  appearance: "auto" # can be "light", "dark" or "auto"
+#  back_home_text: ".." # customize text for homepage link in post layout
+#  date_format: "%Y-%m-%d" # customize how date is formatted
+#  show_description: true # show blog description in home page
 
+date_format: "%Y-%m-%d"
 google_analytics: G-0GENL6L0S9
 flag_counter: false
+feed:
+  excerpt_only: true
+
+seo_tag_enable: true
 
 kramdown:
+  auto_id_stripping: true
   toc_levels: 1..3
-  
+
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
   - jekyll-sitemap
   - jemoji
 # Exclude from processing.

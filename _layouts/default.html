@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'zh-CN' }}">
   {%- include head.html -%}
-  <body a="{{ site.theme_config.appearance | default: 'auto' }}">
-    <main class="page-content" aria-label="Content">
-      <div class="w">
-        {{ content }}
-      </div>
-    </main>
+  <body>
+    {%- include header.html -%}
+    {{ content }}
 
-    {%-if site.goat_counter and jekyll.environment == "production"-%}
-      {%-include goat_counter.html-%}
-    {%-endif-%}
+    {%- include footer.html -%}
 
-    {%- if site.flag_counter and jekyll.environment == "production" -%}
-        {%- include flag-counter.html -%}
-    {%- endif -%}
-
-    {% if page.custom_js %}
-      {% for js_file in page.custom_js %}
-        <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
-      {% endfor %}
-    {% endif %}
+    {% if page.custom_js %} {% for js_file in page.custom_js %}
+    <script
+      type="text/javascript"
+      src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"
+    ></script>
+    {% endfor %} {% endif %}
   </body>
 </html>
