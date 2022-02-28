@@ -59,12 +59,17 @@ body {
     padding: 0;
 }
 
-footer,
+footer {
+    margin: 0 auto;
+    max-width: var(--width-content);
+    padding: 3rem 1rem;
+}
+
 header,
 main {
     margin: 0 auto;
     max-width: var(--width-content);
-    padding: 3rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 hr {
