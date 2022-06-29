@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Netflix的反馈原则
-categories: [读书心得]
-tags: ['自由与责任', '不拘一格']
+categories: ['偶有所得']
+tags: ['读书笔记','自由与责任', '不拘一格']
 ---
 
 Netflix的4A反馈原则，同时适用于反馈双方，简单有效。
