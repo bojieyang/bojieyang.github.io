@@ -5,6 +5,9 @@ layout: default
   <header>
     <h2>{{ page.title }}</h2>
     <h3>{{- page.date | date: site.date_format -}}</h3>
+    {% if page.updated_at %}
+    <small>最后更新于：{{- page.updated_at | date: site.date_format -}}</small>
+    {% endif %}
   </header>
   <main>
     {{ content }}
