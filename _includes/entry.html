@@ -1,3 +1,5 @@
+<!-- posts is the default collection, so should filter it -->
+{% if entry.type == "series" and site.collections.size > 1 %}
 <article>
     <aside>
         <h3>{{ entry.title }}</h3>
@@ -6,11 +8,43 @@
             {% endif %} 
     </aside>
 </article>
+{% assign series = site.collections | where: 'type', entry.type %}
+<section>
+{% for serie in series %}
+<!-- hacked, should use post_url instead -->
+{% assign intro_url = site.url | append: '/articles/' |  append: serie.intro | append: '.html' %}
+<aside>
+    <a href="{{ intro_url | relative_url }}">
+    <h3>{{ serie.title }}</h3>
+    <code> {{- serie.updated_at | date: site.date_format -}} </code>
+    <p> {{ serie.excerpt }} </p>
+    {%- if serie.tags.size > 0 -%}
+        {%- for tag in serie.tags -%}
+        <mark>{{ tag }}</mark>
+        {%-endfor-%}
+    {%-endif-%}
+    </a>
+</aside>
 
-{% if entry.category %} 
-    {%-assign posts = site.categories[entry.category]-%} 
-        {%-else-%} 
-    {%-assign posts = site.posts-%}
+{% endfor %}
+</section>
 {% endif %}
 
-{%-include cards.html posts=posts -%}
+{% if entry.type == "lastest" and site.posts.size > 0 %}
+<article>
+    <aside>
+        <h3>{{ entry.title }}</h3>
+            {% if entry.subtitle  %}
+            <small>{{ entry.subtitle }}</small>  
+            {% endif %} 
+    </aside>
+</article>
+    {% if entry.category %} 
+        {%-assign posts = site.categories[entry.category]-%} 
+            {%-else-%} 
+        {%-assign posts = site.posts-%}
+    {% endif %}
+    {%-include cards.html posts=posts -%}
+{% endif %}    
+
+

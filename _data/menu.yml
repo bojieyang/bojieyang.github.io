@@ -2,6 +2,12 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - entry: ""
+  - entry:
+    type: "series"
+    title: "系列"
+    subtitle: "同一主题的文章集合"
+
+  - entry:
+    type: "lastest"
     title: 最近更新
     subtitle: ""

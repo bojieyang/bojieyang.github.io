@@ -13,7 +13,12 @@
           {% endif %}
     </figure>
     {% endif %}
-    <h3>{{ post.title }}</h3>
+    <h3>
+        {{ post.title }}
+        {%- if forloop.first -%}
+        <sup>最新</sup>
+        {% endif %}
+    </h3>
     <small>  {{- post.date | date: site.date_format -}} </small>
     <p> {{ post.excerpt }} </p>
     {%- if post.tags.size > 0 -%}
