@@ -3,6 +3,8 @@ layout: post
 title: 发现创新成长型十倍股
 categories: ['折腾不止']
 tags: ['投资', '发现十倍股']
+series: "find_tenfold_stocks"
+series_order: 2
 ---
 本文是发现十倍股系列的第一篇，介绍如何发现创新成长型十倍股。
 <!--more-->

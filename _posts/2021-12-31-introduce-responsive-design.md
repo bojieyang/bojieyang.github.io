@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 响应式设计介绍
-categories: ['Web开发']
+categories: ['折腾不止']
 tags: ['响应式设计']
 published: false
 ---

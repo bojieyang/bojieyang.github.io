@@ -1,5 +1,6 @@
 ---
 layout: default
+paginator_enabled: true
 ---
 <article>
   <header>
@@ -13,6 +14,27 @@ layout: default
     {{ content }}
   </main>
   <footer>
+    {% if page.series %}
+    <section>
+      <details open>
+        <summary>本系列文章列表</summary>
+      {% assign current_series = site.posts | where: "series", page.series | sort: 'date' | sort: 'series_order' %}
+      {% if current_series.size > 0 %}
+      <ol>
+        {% for serie in current_series %}
+        {% if page.id != serie.id %}
+        <li> <a href="{{ serie.url }}">{{ serie.title }}</a><em><small>&emsp;{{- serie.date | date: site.date_format -}}</small></em>
+        {%-else-%}
+        <li><em>{{ serie.title }}<small>&emsp;{{- serie.date | date: site.date_format -}}</small></em></li>
+        {% endif %}
+        {% endfor %}
+      </ol>
+      {% endif %}
+    </details>
+      </section>
+    {% endif %}
+
+  {% if page.paginator_enabled %}
   <section style="justify-content: space-around">
         {% if page.previous %}
             <a href="{{ page.previous.url }}">上一篇</a> 
@@ -22,6 +44,6 @@ layout: default
             <a href="{{ page.next.url }}">下一篇</a>
         {% endif %}
   </section>
+  {% endif %}
 </footer>
 </article>
-

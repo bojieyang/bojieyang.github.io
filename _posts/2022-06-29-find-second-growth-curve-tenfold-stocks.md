@@ -3,6 +3,8 @@ layout: post
 title: 发现第二增长曲线型十倍股
 categories: ['折腾不止']
 tags: ['投资', '发现十倍股']
+series: "find_tenfold_stocks"
+series_order: 3
 ---
 本文是发现十倍股系列的第二篇，介绍如何发现第二增长曲线型十倍股。
 <!--more-->

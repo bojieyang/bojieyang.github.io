@@ -1,0 +1,22 @@
+<section>
+    {% for serie in series %}
+    <!-- hacked, should use post_url instead -->
+    {% assign intro_url = site.url | append: '/articles/' |  append: serie.intro | append: '.html' %}
+    <aside style="position:relative;">
+        {% if serie.state == 'ongoing' %}
+        <sup class="ongoing">持续更新中</sup>
+        {% endif %}
+        <a href="{{ intro_url | relative_url }}">
+        <h3>{{ serie.title }}</h3>
+        <small>最新： {{- serie.updated_at | date: site.date_format -}} </small>
+        <p> {{ serie.excerpt }} </p>
+        {%- if serie.tags.size > 0 -%}
+            {%- for tag in serie.tags -%}
+            <mark>{{ tag }}</mark>
+            {%-endfor-%}
+        {%-endif-%}
+        </a>
+    </aside>
+    
+    {% endfor %}
+    </section>

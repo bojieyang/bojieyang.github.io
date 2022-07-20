@@ -55,6 +55,18 @@ img.centered {
     margin-right: auto;
   }
 
+sup.lastest {
+    position:absolute;
+    right: -8px;
+    top: -8px;
+}
+
+sup.ongoing {
+    position:absolute;
+    left: -10px;
+    top: 5px;
+    border-radius: 0px 50px 50px 0px;
+}
 /** 
 @media (max-width: 576px) {
     nav {
