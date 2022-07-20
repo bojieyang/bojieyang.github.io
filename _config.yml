@@ -43,6 +43,9 @@ server: true
 locale: zh-CN
 date_format: "%Y-%m-%d"
 google_analytics: G-0GENL6L0S9
+webmaster_verifications:
+  google: JMoUarH8fRcCgrUK6azhvne5g6Pi0qA5j7yOW3cUyKk
+
 flag_counter: false
 feed:
   excerpt_only: true
