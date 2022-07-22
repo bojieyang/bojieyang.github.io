@@ -11,6 +11,6 @@
   state: "ongoing"
   title: "planned.today 诞生记"
   intro: "birth-of-planned-today-app"
-  updated_at: 2022-07-18
+  updated_at: 2022-07-22
   excerpt: "记录我创建 planned.today 的过程。"
   tags: ["创造的乐趣", "App", "Dev"]

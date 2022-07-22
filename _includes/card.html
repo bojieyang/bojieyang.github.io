@@ -19,7 +19,12 @@
     <h3>
         {{ post.title }}
     </h3>
+    {% if post.updated_at %}
+    <mark class="update"><small>更新于</small></mark><small>  {{- post.date | date: site.date_format -}} </small>
+    {% else %}
     <small>  {{- post.date | date: site.date_format -}} </small>
+    {% endif %}
+    
     <p>{{ post.excerpt }}</p>  
     {%- if post.tags.size > 0 -%}
         {%- for tag in post.tags -%}

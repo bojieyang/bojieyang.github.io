@@ -47,6 +47,22 @@ section aside mark {
     padding: 0 0.4rem;
 }
 
+section aside mark.update {
+    background-color:#ff1493;
+
+}
+@media (prefers-color-scheme: dark) {
+    section aside mark.update {
+        background-color:#9932cc;    
+    }
+}
+
+
+section aside mark small {
+    color:#ffffff;
+}
+
+/* centered image tag */
 img.centered {
     display: block;
     margin-top: 0.5rem;
@@ -67,6 +83,8 @@ sup.ongoing {
     top: 5px;
     border-radius: 0px 50px 50px 0px;
 }
+
+
 /** 
 @media (max-width: 576px) {
     nav {
