@@ -17,7 +17,7 @@ updated_at: 2022-07-15
 # 是减脂，不是减体重
 一般想要瘦下来的人总认为想要瘦就一定要把体重减下来，但这其实是一个最普遍的误区，就是只关注体重的变化。实际上，想要看起来瘦，最应该关注的是体脂率。相同体重的人，体脂率低的看起来更瘦。也就是说，我们通常说的减肥，目标应该是减脂。下图是男女不同体脂率下的视觉效果，一目了然。
 
-![男女不同体脂率下的视觉效果]({{site.url}}/assets/img/slim-framework-for-ordinary/body_fat_percentage.jpeg){:width="400"}{:.centered}
+![男女不同体脂率下的视觉效果]({{site.url}}/assets/img/slim-framework-for-ordinary/body_fat_percentage.jpeg){:width="400" loading="lazy"}{:.centered}
 
 一般来说，男性体脂率在12左右，女性体脂率在20左右，视觉上就非常瘦了。而且这是普通人只要付出一定努力就可以达到的，看了这篇文章，能更好的帮助你达到目标。
 
