@@ -69,10 +69,10 @@ tags: ['个人成长', '达成目标', '方法论']
 当我们看清了机制，有了方法论后，我们努力了一段时间，可能会发现，我们确实有进步，但当前水平和卓越之间似乎有一道难以逾越的鸿沟。事实上，鸿沟是确实存在的，只有优秀的学习方法才能让我们跨越这道鸿沟。
 
 《认知觉醒》一书中指出，学习可以被分为被动学习和主动学习两个层次，就像一个金字塔，从上到下，学习效果越来越好。从下图我们可以看到所有的输入都是被动学习，都在金字塔上方，而所有的输出都是主动学习，都在金字塔下方。所以我们学习的一个关键就是要用**输出倒逼输入**。在输出的过程中，当我们发现自己没法向别人清晰的讲解我们学习的内容时，就发现了我们没有真正掌握的内容，就可以补上知识体系的漏洞。
-![学习的金字塔层级]({{site.url}}/assets/img/how-to-achieve-a-goal/pyramid_of_study.png){:width="587" loading="lazy"}{:.centered}
+![学习的金字塔层级]({{site.url}}/assets/img/how-to-achieve-a-goal/pyramid_of_study.webp){:width="587" loading="lazy"}{:.centered}
 
 核心方法论是：不要重复已经学会的，而是要不断地通过反馈找到似懂非懂的部分，反复练习这部分直到完全掌握，一直重复这个过程，就会进度很快。下图展示了可以练习的四个基本原则。
-![刻意练习的基本原则]({{site.url}}/assets/img/how-to-achieve-a-goal/basic_principles_of_practice.png){:width="695" loading="lazy"}{:.centered}
+![刻意练习的基本原则]({{site.url}}/assets/img/how-to-achieve-a-goal/basic_principles_of_practice.webp){:width="695" loading="lazy"}{:.centered}
 
 这些原则在《刻意练习》这本书里有详细介绍，推荐阅读。
 

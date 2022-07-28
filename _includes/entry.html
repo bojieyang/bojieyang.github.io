@@ -5,7 +5,7 @@
     {%-include series_cards.html series=series -%}
 {% endif %}
 
-{% if entry.type == "lastest" and site.posts.size > 0 %}
+{% if entry.type == "latest" and site.posts.size > 0 %}
     {%-include column_desc.html entry=entry -%}
     {% if entry.category %} 
         {%-assign posts = site.categories[entry.category]-%} 

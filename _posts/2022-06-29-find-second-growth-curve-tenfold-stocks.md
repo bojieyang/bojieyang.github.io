@@ -24,7 +24,7 @@ series_order: 3
 # 第二增长曲线型公司
 第二增长曲线型公司是指公司当前已经有至少一个比较稳定的业务，有稳定的营收与现金流，但业务增长比较平缓，正致力于开创下一个业务，试图通过该业务的发展来实现企业增长。正在开创的这个业务就是公司下阶段的增长引擎，因此被称为第二增长曲线。
 
-![第二增长曲线]({{site.url}}/assets/img/find-tenfold-stocks/second_growth_curve.png){:width="600" height="319" loading="lazy"}{:.centered}
+![第二增长曲线]({{site.url}}/assets/img/find-tenfold-stocks/second_growth_curve.webp){:width="600" height="319" loading="lazy"}{:.centered}
 
 已经成功发展出第二曲线的公司，如华为公司最开始的业务是设计制造电信设备，这是一个面向企业的业务。之后抓住了智能手机的市场机遇，成功的打造了手机这个面向消费者的业务，市场份额排名最高时为全球第二名。打造出了自己的第二增长曲线。
 

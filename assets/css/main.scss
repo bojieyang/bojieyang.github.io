@@ -67,13 +67,20 @@ section aside mark small {
 /* centered image tag */
 img.centered {
     display: block;
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     margin-left: auto;
     margin-right: auto;
   }
 
-sup.lastest {
+/* simulate figcaption tag */
+img + em {
+    display: block;
+    text-align:center;
+    font-size: small;
+}
+
+sup.latest {
     position:absolute;
     right: -8px;
     top: -8px;
