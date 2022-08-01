@@ -1,18 +1,18 @@
-{% if entry.type == "series" and site.data.series.size > 0 %}
-    {% assign entry=entry %}
-    {% include column_desc.html entry=entry %}
-    {% assign series = site.data.series | sort: "updated_at" | reverse %}
-    {%-include series_cards.html series=series -%}
-{% endif %}
+{%- if entry.type == "series" and site.data.series.size > 0 -%}
+    {%- assign entry=entry -%}
+    {%- include column_desc.html entry=entry -%}
+    {%- assign series = site.data.series -%}
+    {%- include series_cards.html series=series -%}
+{%- endif -%}
 
-{% if entry.type == "latest" and site.posts.size > 0 %}
-    {%-include column_desc.html entry=entry -%}
-    {% if entry.category %} 
-        {%-assign posts = site.categories[entry.category]-%} 
-            {%-else-%} 
-        {%-assign posts = site.posts-%}
-    {% endif %}
-    {%-include cards.html posts=posts -%}
-{% endif %}    
+{%- if entry.type == "latest" and site.posts.size > 0 -%}
+    {%- include column_desc.html entry=entry -%}
+    {%- if entry.category -%} 
+        {%- assign posts = site.categories[entry.category] -%} 
+            {%- else -%} 
+        {%- assign posts = site.posts-%}
+    {%- endif -%}
+    {%- include cards.html posts=posts -%}
+{%- endif -%}    
 
 

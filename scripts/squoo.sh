@@ -12,7 +12,7 @@ DIST_EXT="webp"
 CONFIG='{}'
 
 help() {
-  echo "./squoo.sh -s SOURCE_DIR -t DIST_DIR"
+  echo "./squoo.sh -s SOURCE_DIR -d DIST_DIR"
   exit 1
 }
 
@@ -77,10 +77,10 @@ recurse() {
 }
 
 main() {
-  while getopts "s:t:" OPTS; do
+  while getopts "s:d:" OPTS; do
     case $OPTS in
       s) SOURCE_DIR="$OPTARG" ;;
-      t) DIST_DIR="$OPTARG" ;;
+      d) DIST_DIR="$OPTARG" ;;
       ?) help ;;
     esac
   done
@@ -101,7 +101,7 @@ main() {
     )
   fi
 
-  echo "use $CMD_NAME -s $SOURCE_DIR" " " "-t $DIST_DIR"
+  echo "use $CMD_NAME -s $SOURCE_DIR" " " "-d $DIST_DIR"
 
   for i in $(ls ${SOURCE_DIR}); do
     local FULL_PATH=${SOURCE_DIR}/${i}

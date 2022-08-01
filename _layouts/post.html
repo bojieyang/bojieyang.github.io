@@ -14,6 +14,11 @@ paginator_enabled: true
     {{ content }}
   </main>
   <footer>
+    
+    {% if page.mermaid %}
+      {% include mermaid.html %}
+    {% endif %}
+
     {% if page.series %}
     <section>
       <details open>
