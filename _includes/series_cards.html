@@ -5,6 +5,8 @@
     <aside style="position:relative;">
         {%- if serie.state == 'ongoing' -%}
         <sup class="ongoing">持续更新中</sup>
+        {%- elsif serie.state == 'suspend' -%}
+        <sup class="suspend">暂停更新</sup>
         {%- endif -%}
         <a href="{{ intro_url | relative_url }}">
         <h3>{{ serie.title }}</h3>
@@ -13,6 +15,9 @@
         
         <mark class="update"><small>更新于</small></mark> <small>{{- latest_within_serie.date | date: site.date_format -}} </small>
         <p> {{ serie.excerpt }} </p>
+        {%- if serie.extra -%}
+        <p> <small>{{ serie.extra }}</small></p>
+        {%- endif -%}
         {%- if serie.tags.size > 0 -%}
             {%- for tag in serie.tags -%}
             <mark>{{ tag }}</mark>

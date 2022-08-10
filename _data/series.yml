@@ -1,10 +1,11 @@
 -
   name: birth_of_planned_today_app
   type: series
-  state: "ongoing"
+  state: "suspend"
   title: "planned.today 诞生记"
   intro: "birth-of-planned-today-app"
   excerpt: "记录我创建 planned.today 的过程。"
+  extra: "重新思考是否真的在解决痛点问题？"
   tags: ["创造的乐趣", "App", "Dev"]
 - 
   name: find_tenfold_stocks

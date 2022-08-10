@@ -87,8 +87,18 @@ sup.latest {
 }
 
 sup.ongoing {
+    transform: skewY(-30deg); 
     position:absolute;
     left: -10px;
     top: 5px;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+sup.suspend {
+    transform: skewY(-30deg);
+    background-color:var(--color-text-secondary);
+    position:absolute;
+    left: -10px;
+    top: 5px;
+    border-radius: 0px 0px 0px 0px;
 }
