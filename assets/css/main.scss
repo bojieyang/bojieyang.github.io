@@ -96,9 +96,20 @@ sup.ongoing {
 
 sup.suspend {
     transform: skewY(-30deg);
-    background-color:var(--color-text-secondary);
+    background: linear-gradient(-30deg, var(--color-text-secondary), var(--color-bg-secondary));
     position:absolute;
     left: -10px;
     top: 5px;
     border-radius: 0px 0px 0px 0px;
+}
+
+.slogan {
+  
+    font-size: larger;
+    font-weight: bolder;
+    background:linear-gradient(45deg,#e5b751,#1677b3,#cc5595 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+
 }

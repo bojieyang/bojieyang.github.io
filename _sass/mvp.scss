@@ -143,9 +143,9 @@ section header {
 
 /* Nav */
 nav {
-    align-items: center;
     display: flex;
-    font-weight: bold;
+    align-items:center;
+    font-weight:bold;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
@@ -159,7 +159,7 @@ nav ul li {
     display: inline-block;
     margin: 0 0.5rem;
     position: relative;
-    text-align: left;
+    text-align:start;
 }
 
 /* Nav Dropdown */

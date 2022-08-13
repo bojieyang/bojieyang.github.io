@@ -2,53 +2,55 @@
 layout: default
 paginator_enabled: true
 ---
-<article>
-  <header>
-    <h2>{{ page.title }}</h2>
-    <h3>{{- page.date | date: site.date_format -}}</h3>
-    {% if page.updated_at %}
-    <small>最后更新于：{{- page.updated_at | date: site.date_format -}}</small>
-    {% endif %}
-  </header>
-  <main>
-    {{ content }}
-  </main>
-  <footer>
-    
-    {% if page.mermaid %}
-      {% include mermaid.html %}
-    {% endif %}
-
-    {% if page.series %}
-    <section>
-      <details open>
-        <summary>本系列文章列表</summary>
-      {% assign current_series = site.posts | where: "series", page.series | sort: 'date' | sort: 'series_order' %}
-      {% if current_series.size > 0 %}
-      <ol>
-        {% for serie in current_series %}
-        {% if page.id != serie.id %}
-        <li> <a href="{{ serie.url }}">{{ serie.title }}</a><em><small>&emsp;{{- serie.date | date: site.date_format -}}</small></em>
-        {%-else-%}
-        <li><em>{{ serie.title }}<small>&emsp;{{- serie.date | date: site.date_format -}}</small></em></li>
-        {% endif %}
-        {% endfor %}
-      </ol>
+<main class="container">
+  <article class="heti">
+    <header>
+      <h2>{{ page.title }}</h2>
+      <h3><time datetime="{{- page.date | date: site.date_format -}}">{{- page.date | date: site.date_format -}}</time></h3>
+      {% if page.updated_at %}
+      <small>最后更新于：<time datetime="{{- page.updated_at | date: site.date_format -}}">{{- page.updated_at | date: site.date_format -}}</time></small>
       {% endif %}
-    </details>
-      </section>
+    </header>
+    <div class="main">
+      {{ content }}
+    </div>
+    <footer>
+      
+      {% if page.mermaid %}
+        {% include mermaid.html %}
+      {% endif %}
+  
+      {% if page.series %}
+      <section>
+        <details open>
+          <summary>本系列文章列表</summary>
+        {% assign current_series = site.posts | where: "series", page.series | sort: 'date' | sort: 'series_order' %}
+        {% if current_series.size > 0 %}
+        <ol>
+          {% for serie in current_series %}
+          {% if page.id != serie.id %}
+          <li> <a href="{{ serie.url }}">{{ serie.title }}</a><em><small>&emsp;{{- serie.date | date: site.date_format -}}</small></em>
+          {%-else-%}
+          <li><em>{{ serie.title }}<small>&emsp;{{- serie.date | date: site.date_format -}}</small></em></li>
+          {% endif %}
+          {% endfor %}
+        </ol>
+        {% endif %}
+      </details>
+        </section>
+      {% endif %}
+  
+    {% if page.paginator_enabled %}
+    <section style="justify-content: space-around">
+          {% if page.previous %}
+              <a href="{{ page.previous.url }}">上一篇</a> 
+          {% endif %}
+          <a href="{{ site.url }}">回首页</a> 
+          {% if page.next %}        
+              <a href="{{ page.next.url }}">下一篇</a>
+          {% endif %}
+    </section>
     {% endif %}
-
-  {% if page.paginator_enabled %}
-  <section style="justify-content: space-around">
-        {% if page.previous %}
-            <a href="{{ page.previous.url }}">上一篇</a> 
-        {% endif %}
-        <a href="{{ site.url }}">回首页</a> 
-        {% if page.next %}        
-            <a href="{{ page.next.url }}">下一篇</a>
-        {% endif %}
-  </section>
-  {% endif %}
-</footer>
-</article>
+  </footer>
+  </article>
+</main>
