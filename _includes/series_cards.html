@@ -1,18 +1,16 @@
 <section>
     {%- for serie in series -%}
-    <!-- hacked, should use post_url instead -->
-    {%- assign intro_url = site.url | append: '/articles/' |  append: serie.intro | append: '.html' -%}
+    {%- assign latest_within_serie = site.posts | where: "series", serie.name | sort: "date" | reverse | first -%}
+    
     <aside style="position:relative;">
         {%- if serie.state == 'ongoing' -%}
         <sup class="ongoing">持续更新中</sup>
         {%- elsif serie.state == 'suspend' -%}
         <sup class="suspend">暂停更新</sup>
         {%- endif -%}
-        <a href="{{ intro_url | relative_url }}">
+        <a href="{{ latest_within_serie.url | relative_url }}">
         <h3>{{ serie.title }}</h3>
-        
-        {%- assign latest_within_serie = site.posts | where: "series", serie.name | sort: "date" | reverse | first -%}
-        
+                
         <mark class="update"><small>更新于</small></mark> <small>{{- latest_within_serie.date | date: site.date_format -}} </small>
         <p> {{ serie.excerpt }} </p>
         {%- if serie.extra -%}

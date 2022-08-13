@@ -24,7 +24,7 @@ author:
   url: https://bojieyang.github.io
 timezone: Asia/Shanghai
 #permalink: /:year/:month/:title:output_ext
-permalink: /articles/:slug:output_ext
+permalink: /posts/:slug/
 excerpt_separator: <!--more-->
 auto: true
 server: true
