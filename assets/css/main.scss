@@ -119,3 +119,7 @@ sup.suspend {
     font-weight: inherit;
     filter:none;
 }
+
+.post_container {
+    max-width: var(--width-post);
+}
