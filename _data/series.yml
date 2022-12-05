@@ -1,3 +1,20 @@
+
+- 
+  name: find_tenfold_stocks
+  type: series
+  title: "发现十倍股系列"
+  intro: "find-tenfold-stocks"
+  excerpt: "介绍几种发现潜在十倍股的方法。"
+  tags: ["投资", "方法论"]
+
+- 
+  name: invest_memo
+  type: series
+  title: "投资备忘录"
+  intro: invest-memo
+  excerpt: "不定期更新的投资备忘录"
+  tags: ["投资", "投资备忘录"]
+
 -
   name: birth_of_planned_today_app
   type: series
@@ -7,10 +24,3 @@
   excerpt: "记录我创建 planned.today 的过程。"
   extra: "重新思考是否真的在解决痛点问题？"
   tags: ["创造的乐趣", "App", "Dev"]
-- 
-  name: find_tenfold_stocks
-  type: series
-  title: "发现十倍股系列"
-  intro: "find-tenfold-stocks"
-  excerpt: "介绍几种发现潜在十倍股的方法。"
-  tags: ["投资", "方法论"]
