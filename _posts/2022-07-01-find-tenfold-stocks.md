@@ -6,6 +6,8 @@ tags: ['投资', '发现十倍股']
 series: "find_tenfold_stocks"
 series_order: 1
 paginator_enabled: false
+cover_url: "/assets/img/dist/find_tenfold_stocks_medium.webp"
+cover_desc: "Photo by Isaac Smith on Unsplash"
 ---
 本文是发现十倍股系列的导读篇，帮助你更好的理解和使用相关投资方法。
 <!--more-->

@@ -5,11 +5,14 @@ paginator_enabled: true
 <main class="post_container">
   <article>
     <header>
-      <h2>{{ page.title }}</h2>
+      {%- if page.cover_url -%}
+      <img title="{{ page.cover_desc }}" alt="{{ page.cover_desc }}" src="{{ page.cover_url | relative_url }}">
+      {%- endif -%}
+        <h2>{{ page.title }}</h2>
       <h3><time datetime="{{- page.date | date: site.date_format -}}">{{- page.date | date: site.date_format -}}</time></h3>
       {% if page.updated_at %}
       <small>最后更新于：<time datetime="{{- page.updated_at | date: site.date_format -}}">{{- page.updated_at | date: site.date_format -}}</time></small>
-      {% endif %}
+      {% endif %}      
     </header>
     <div class="main">
       {{ content }}
