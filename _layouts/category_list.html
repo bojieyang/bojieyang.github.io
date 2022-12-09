@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<header>
+    <h1> {{ page.title }} </h1>
+</header>
+<main>
+
+{% for category in site.categories %}
+    
+    {% assign category_name = category[0] %}
+    <article>
+        <aside>
+            <h3>{{ category_name }}</h3>
+        </aside>
+    </article>
+    <ul>
+        {% for post in site.categories[category_name] %}
+        <li>
+             <a href="{{ post.url | absolute_url }}"> {{ post.title }}</a> <em><small>&emsp;{{- post.date | date: site.date_format -}}</small></em>
+            <small>{{ post.excerpt }}</small>
+        </li>
+    {% endfor %}
+    </ul>
+    
+{% endfor %}
+</main>

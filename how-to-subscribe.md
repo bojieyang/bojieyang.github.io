@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 如何订阅
-permalink: /how-to-subscribe.html
+permalink: /how-to-subscribe
 sitemap: false
 ---
 

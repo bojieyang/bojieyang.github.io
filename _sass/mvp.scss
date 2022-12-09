@@ -161,7 +161,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 0 0.5rem;
+    margin: 0 0.1rem;
     position: relative;
     text-align:start;
 }
@@ -201,6 +201,39 @@ nav ul li ul li,
 nav ul li ul li a {
     display: block;
 }
+
+/*
+li > a:hover {
+    color: var(--color-link);
+    outline: 0.1rem solid;
+    outline-offset: 0.3rem;
+    filter: brightness(var(--hover-brightness));
+}
+*/
+/*
+a > i {
+    color: var(--color-secondary);
+    filter:brightness(85%);
+    #1677b3
+    font-weight: normal;
+}
+*/
+a > i {
+    color: #1677b3;
+    font-weight: normal;
+}
+
+a > i:hover {
+    color: var(--color-link);
+    filter: brightness(var(--hover-brightness));
+}
+
+
+a > i:active {
+    color: var(--color-link);
+    filter: brightness(var(--active-brightness));
+}
+
 
 /* Typography */
 code,
@@ -297,7 +330,6 @@ a:hover {
 
 a b,
 a em,
-a i,
 a strong,
 button {
     border-radius: var(--border-radius);
@@ -330,13 +362,13 @@ button {
     color: var(--color-bg);
 }
 
-a em,
-a i {
+a em {
     border: 2px solid var(--color-link);
     border-radius: var(--border-radius);
     color: var(--color-link);
     display: inline-block;
     padding: 1rem 2rem;
+    
 }
 
 article aside a {
