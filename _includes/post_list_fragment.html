@@ -1,0 +1,27 @@
+
+{% if include.posts.size > 0 %}
+<ul>
+    {% for post in include.posts %}
+    
+    {% if include.limit_size %}
+        {% if forloop.index > include.limit_size %}
+            {% break %}
+        {% endif %}
+    {% endif %}
+    <li>
+         <a href="{{ post.url | absolute_url }}"> {{ post.title }}</a> 
+         {% if include.show_category %}
+         <small><samp>{{ post.categories[0]}}</samp></small>
+         {% endif %}
+         {% if include.show_tag %}
+         {% for tag in post.tags limit:3 %}
+            <small><samp>#{{ tag }}</samp></small>
+         {% endfor %}
+        
+         {% endif %}
+         <em><small>&emsp;{{- post.date | date: site.date_format -}}</small></em>
+        <small>{{ post.excerpt }}</small>
+    </li>
+{% endfor %}
+</ul>
+{% endif %}
