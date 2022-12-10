@@ -74,6 +74,7 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       show_related_posts_enabled: true
+      show_copyright_enabled: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

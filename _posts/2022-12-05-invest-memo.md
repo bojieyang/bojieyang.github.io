@@ -6,6 +6,7 @@ tags: ['投资', '投资备忘录']
 series: "invest_memo"
 series_order: 1
 paginator_enabled: false
+show_copyright_enabled: false
 cover_url: "/assets/img/dist/invest_memo_medium.webp"
 cover_desc: "Photo by Jordan Madrid on Unsplash"
 ---
