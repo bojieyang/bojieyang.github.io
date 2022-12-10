@@ -9,7 +9,7 @@ layout: default
 {% for category in site.categories %}
     
     {% assign category_name = category[0] %}
-    <article>
+    <article id="{{ category_name }}">
         <aside>
             <h3>{{ category_name }}</h3>
         </aside>

@@ -17,6 +17,16 @@ paginator_enabled: true
     <div class="main">
       {{ content }}
     </div>
+
+    {% if page.tags.size > 0 %}
+      <section>
+        {% for tag in page.tags %}
+        <samp>
+          <a title="{{ tag }}标签关联的文章" href="/tags/#{{ tag }}"> #{{ tag }}</a>
+        </samp>
+        {% endfor %}
+      </section>
+    {% endif %}
     <footer>
       
       {% if page.mermaid %}
@@ -40,7 +50,7 @@ paginator_enabled: true
         </ol>
         {% endif %}
       </details>
-        </section>
+      </section>
       {% endif %}
   
     {% if page.paginator_enabled %}
@@ -54,6 +64,8 @@ paginator_enabled: true
           {% endif %}
     </section>
     {% endif %}
+
+    
   </footer>
   </article>
 </main>
