@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 什么是企业的竞争优势
-categories: ['偶有所得']
+categories: ['投资']
 tags: ["投资", "读书笔记"]
 book:
   name: "《竞争优势：透视企业护城河》"

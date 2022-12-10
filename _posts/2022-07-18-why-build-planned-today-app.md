@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 为什么我要创建 planned.today
-categories: ['折腾不止']
+categories: ['产品心得']
 tags: ['创造的乐趣', 'planned.today']
 series: "birth_of_planned_today_app"
 updated_at: 2022-07-21

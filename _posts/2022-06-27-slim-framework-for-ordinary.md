@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 给普通人的瘦身减脂框架
-categories: ['热爱生活']
+categories: ['生活方式']
 tags: ['健身', '瘦身', '减脂']
 updated_at: 2022-07-15
 ---

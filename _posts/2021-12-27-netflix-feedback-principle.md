@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Netflix的反馈原则
-categories: ['偶有所得']
+categories: ['个人成长']
 tags: ['读书笔记','自由与责任', '不拘一格']
 ---
 

@@ -123,3 +123,30 @@ sup.suspend {
 .post_container {
     max-width: var(--width-post);
 }
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.intro .desc {
+    font-size: medium;
+    font-weight:lighter;
+}
+
+.intro .desc > .emoji {
+    font-size: x-large;
+}
+
+.more {
+    padding-left: 40px;
+    margin-top: -16px;
+    margin-bottom: 32px;
+}
+
+small > p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.75rem;
+}

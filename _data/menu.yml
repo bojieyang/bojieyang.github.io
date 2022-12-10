@@ -3,11 +3,13 @@
 
 entries:
   - entry:
+    type: "latest"
+    title: 最近更新
+    subtitle: ""
+    
+  - entry:
     type: "series"
     title: "系列"
     subtitle: "同一主题的文章集合"
 
-  - entry:
-    type: "latest"
-    title: 最近更新
-    subtitle: ""
+

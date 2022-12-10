@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 发现十倍股系列导读
-categories: ['折腾不止']
+categories: ['投资']
 tags: ['投资', '发现十倍股']
 series: "find_tenfold_stocks"
 series_order: 1

@@ -7,12 +7,31 @@
 
 {%- if entry.type == "latest" and site.posts.size > 0 -%}
     {%- include column_desc.html entry=entry -%}
+    {%- assign show_latest_limit = 3 -%}
+    <ul>
+        {% for post in site.posts limit: show_latest_limit %}
+        <li>
+             <a href="{{ post.url | absolute_url }}"> {{ post.title }}</a> 
+             <small><samp>{{ post.categories[0]}}</samp></small>
+             <em><small>&emsp;{{- post.date | date: site.date_format -}}</small></em>
+            <small>{{ post.excerpt }}</small>
+        </li>
+    {% endfor %}
+        
+    </ul>
+    <div class="more">
+        {%- assign remain_posts_count = site.posts.size - show_latest_limit  -%}
+        <a href="{% link archive.md %}">还有{{ remain_posts_count }}篇文章，前往 👉</a>
+    </div>
+    {% comment %}
     {%- if entry.category -%} 
         {%- assign posts = site.categories[entry.category] -%} 
             {%- else -%} 
         {%- assign posts = site.posts-%}
     {%- endif -%}
     {%- include cards.html posts=posts -%}
+    {% endcomment %}
+
 {%- endif -%}    
 
 

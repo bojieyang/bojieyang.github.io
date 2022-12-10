@@ -1,7 +1,7 @@
 ---
 layout: post
 title: planned.today 诞生记
-categories: ['折腾不止']
+categories: ['产品心得']
 tags: ['创造的乐趣', 'planned.today']
 series: "birth_of_planned_today_app"
 paginator_enabled: false

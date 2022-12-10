@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 投资备忘录系列开启
-categories: ['折腾不止']
+categories: ['投资']
 tags: ['投资', '投资备忘录']
 series: "invest_memo"
 series_order: 1

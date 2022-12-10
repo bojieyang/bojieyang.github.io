@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 发现第二增长曲线型十倍股
-categories: ['折腾不止']
+categories: ['投资']
 tags: ['投资', '发现十倍股']
 series: "find_tenfold_stocks"
 series_order: 3

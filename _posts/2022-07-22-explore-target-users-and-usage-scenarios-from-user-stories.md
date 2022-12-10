@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 探索目标用户与使用场景
-categories: ['折腾不止']
+categories: ['产品心得']
 tags: ['创造的乐趣', 'planned.today', '用户故事']
 series: "birth_of_planned_today_app"
 ---
