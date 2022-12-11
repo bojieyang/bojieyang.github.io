@@ -22,8 +22,8 @@ paginator_enabled: true
       <section>
         {% for tag in page.tags %}
         <samp>
-          <a title="{{ tag }}标签关联的文章" href="/tags/#{{ tag }}"> #{{ tag }}</a>
-        </samp>
+          <a href="/tags/#{{ tag }}"><small>#{{ tag }}</small></a>
+      </samp>
         {% endfor %}
       </section>
     {% endif %}

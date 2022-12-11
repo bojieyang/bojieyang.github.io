@@ -20,12 +20,14 @@
         {%- if serie.extra -%}
         <p> <small>{{ serie.extra }}</small></p>
         {%- endif -%}
+        </a>
         {%- if serie.tags.size > 0 -%}
             {%- for tag in serie.tags -%}
-            <mark>{{ tag }}</mark>
+            <samp>
+                <a href="/tags/#{{ tag }}"><small>#{{ tag }}</small></a>
+            </samp>
             {%-endfor-%}
         {%-endif-%}
-        </a>
     </aside>
     
     {% endfor %}
