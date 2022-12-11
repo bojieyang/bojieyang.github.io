@@ -19,7 +19,7 @@
          {% endfor %}
         
          {% endif %}
-         <em><small>&emsp;{{- post.date | date: site.date_format -}}</small></em>
+         <em><small>&emsp;{{ post.date | timeago }}</small></em>
         <small>{{ post.excerpt }}</small>
     </li>
 {% endfor %}

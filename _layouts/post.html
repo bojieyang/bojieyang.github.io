@@ -51,9 +51,9 @@ paginator_enabled: true
         <ol>
           {% for serie in current_series %}
           {% if page.id != serie.id %}
-          <li> <a href="{{ serie.url }}">{{ serie.title }}</a><em><small>&emsp;{{- serie.date | date: site.date_format -}}</small></em>
+          <li> <a href="{{ serie.url }}">{{ serie.title }}</a><em><small>&emsp;{{ serie.date | timeago }}</small></em>
           {%-else-%}
-          <li><em>{{ serie.title }}<small>&emsp;{{- serie.date | date: site.date_format -}}</small></em></li>
+          <li><em>{{ serie.title }}<small>&emsp;{{ serie.date | timeago }}</small></em></li>
           {% endif %}
           {% endfor %}
         </ol>

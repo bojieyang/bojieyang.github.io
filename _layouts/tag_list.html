@@ -13,16 +13,7 @@ layout: default
             <h3>#{{ tag_name }}</h3>
         </aside>
     </article>
-    <ul>
-        {% for post in site.tags[tag_name] %}
-        <li>
-             <a href="{{ post.url | absolute_url }}"> {{ post.title }}</a>
-             <small><samp>{{ post.categories[0]}}</samp></small>
-             <em><small>&emsp;{{- post.date | date: site.date_format -}}</small></em>
-            <small>{{ post.excerpt }}</small>
-        </li>
-    {% endfor %}
-    </ul>
-    
+    {% assign current_tag_posts=site.tags[tag_name] %}
+    {% include post_list_fragment.html posts=current_tag_posts show_category=true %}
 {% endfor %}
 </main>

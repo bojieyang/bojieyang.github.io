@@ -15,7 +15,7 @@
         <a href="{{ latest_within_serie.url | relative_url }}">
         <h3>{{ serie.title }}</h3>
                 
-        <mark class="update"><small>更新于</small></mark> <small>{{- latest_within_serie.date | date: site.date_format -}} </small>
+        <mark class="update"><small>更新于</small></mark> <small>{{ latest_within_serie.date | timeago }} </small>
         <p> {{ serie.excerpt }} </p>
         {%- if serie.extra -%}
         <p> <small>{{ serie.extra }}</small></p>

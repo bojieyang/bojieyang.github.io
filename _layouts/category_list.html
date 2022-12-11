@@ -14,14 +14,7 @@ layout: default
             <h3>{{ category_name }}</h3>
         </aside>
     </article>
-    <ul>
-        {% for post in site.categories[category_name] %}
-        <li>
-             <a href="{{ post.url | absolute_url }}"> {{ post.title }}</a> <em><small>&emsp;{{- post.date | date: site.date_format -}}</small></em>
-            <small>{{ post.excerpt }}</small>
-        </li>
-    {% endfor %}
-    </ul>
-    
+    {% assign current_category_posts = site.categories[category_name] %}
+    {% include post_list_fragment.html posts=current_category_posts show_tag=true %}    
 {% endfor %}
 </main>

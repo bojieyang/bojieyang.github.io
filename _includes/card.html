@@ -22,9 +22,9 @@
         {{ post.title }}
     </h3>
     {% if post.updated_at %}
-    <mark class="update"><small>更新于</small></mark><small>  {{- post.updated_at | date: site.date_format -}} </small>
+    <mark class="update"><small>更新于</small></mark><small>{{ post.updated_at | timeago }} </small>
     {% else %}
-    <small>  {{- post.date | date: site.date_format -}} </small>
+    <small>{{ post.date | timeago }} </small>
     {% endif %}
     
     <p>{{ post.excerpt }}</p>  
