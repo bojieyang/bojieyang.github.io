@@ -22,11 +22,13 @@
         {%- endif -%}
         </a>
         {%- if serie.tags.size > 0 -%}
+        <div>
             {%- for tag in serie.tags -%}
             <samp>
                 <a href="/tags/#{{ tag }}"><small>#{{ tag }}</small></a>
             </samp>
             {%-endfor-%}
+        </div>
         {%-endif-%}
     </aside>
     
