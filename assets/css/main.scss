@@ -139,23 +139,6 @@ sup.suspend {
     border-radius: 0px 0px 0px 0px;
 }
 
-.slogan {
-  
-    font-size: larger;
-    font-weight: bolder;
-    background:linear-gradient(45deg,#e5b751,#1677b3,#cc5595 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color:transparent;
-
-}
-
-.slogan > a {
-    color:inherit;
-    font-weight: inherit;
-    filter:none;
-}
-
 .post_container {
     max-width: var(--width-post);
 }
@@ -204,4 +187,13 @@ small > p {
 
 .tag_list > samp {
     margin: 0.2rem 0.2rem;
+}
+
+.nav_font {
+    font-size: larger;
+    font-weight: 400;
+    background:linear-gradient(45deg,#e5b751,#1677b3,#cc5595 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
 }
