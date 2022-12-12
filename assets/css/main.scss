@@ -195,3 +195,13 @@ small > p {
 .copyright  hr {
     margin: 1rem 0;
 }
+
+.tag_list {
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 24px;
+}
+
+.tag_list > samp {
+    margin: 0.2rem 0.2rem;
+}

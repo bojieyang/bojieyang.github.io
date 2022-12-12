@@ -3,6 +3,15 @@ layout: default
 ---
 <header>
     <h1> {{ page.title }} </h1>
+
+    <section class="tag_list">
+        {% for category in site.categories %}
+            {% assign category_name = category[0] %}
+        <samp>
+            <a href="/categories/#{{ category_name }}">{{ category_name }}</a>
+        </samp>
+        {% endfor %}
+    </section>
 </header>
 <main>
 
