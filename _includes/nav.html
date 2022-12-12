@@ -1,18 +1,28 @@
 <nav>
+  <div>
     <a href="{{ site.url }}"><span class="nav_font">{{ site.title }}</span></a>
+  </div>
+   
   <!-- 
   <ul>
       <li><a href="{{ site.url }}">{{ site.title }}</a></li>
   </ul>
   -->
-  <ul>
-    <li><a title="文章分类" href="/categories/"><span class="nav_font">分类</span></a></li>
+  <div>
+    <div class="nav_right_region">
+      <div class="nav_right_region_item">
+        <a title="文章分类" href="/categories/"><span class="nav_font">分类</span></a>
+      </div>
+      <div class="nav_right_region_item">
+        <a title="RSS订阅"  href="/feed.xml"><span class="nav_font">RSS</span></a>
+      </div>
+    </div>
+   
+  </div>
+ 
     <!-- 
     <li>作品</li>
     <li>关于</li>
     -->
-    <li><a title="RSS订阅"  href="/feed.xml"><span class="nav_font">RSS</span></a></li>
-    
-  </ul>
   
 </nav>
