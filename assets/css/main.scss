@@ -37,30 +37,42 @@ aside h6 {
 aside h3 + small {
     line-height: calc(var(--line-height) / 5);
 }
-/* card 下的图片 */
-section aside img {
-    -webkit-transition: transform 1s ease;
-    -moz-transition: transform 1s ease;
-    -ms-transition: transform 1s ease;
-    -o-transition: transform 1s ease;
-    transition: transform 1s ease;
+
+
+.card_img {
+    width: 285px;
+    height: 190px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+  /* 仅在desktop browser 下启用 card 的图片动效 */
+@media only screen and (min-width:961px) {
+
+    .card_img {
+        -webkit-transition: transform 0.5s ease;
+        -moz-transition: transform 0.5s ease;
+        -ms-transition: transform 0.5s ease;
+        -o-transition: transform 0.5s ease;
+        transition: transform 0.5s ease;
+     
+    }
+
+    .card_img:hover {
+        border: 1px solid var(--color-bg-secondary);
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow) var(--color-shadow);
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        transform: scale(1.02);    
+    }
 }
 
-section aside img:hover {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-}
 
-section aside img:active {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-}
+
 
 /* card 下的 mark标签 用作 tag */
 section aside mark {

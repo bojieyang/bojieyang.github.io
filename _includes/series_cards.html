@@ -10,7 +10,8 @@
         {%- endif -%}
         <a href="{{ latest_within_serie.url | relative_url }}">
         {%- if serie.cover_url -%}
-            <img alt="{{ serie.cover_desc }}" src="{{ serie.cover_url | relative_url }}">
+            <div class="card_img" style="background-image:url('{{ serie.cover_url | absolute_url }}')">
+            </div>
         {%- endif -%}
         <a href="{{ latest_within_serie.url | relative_url }}">
         <h3>{{ serie.title }}</h3>
