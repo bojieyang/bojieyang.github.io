@@ -6,7 +6,7 @@ paginator_enabled: true
   <article>
     <header>
       {%- if page.cover_url -%}
-      <img title="{{ page.cover_desc }}" alt="{{ page.cover_desc }}" src="{{ page.cover_url | relative_url }}" height="459">
+      <img title="{{ page.cover_desc }}" alt="{{ page.cover_desc }}" src="{{ page.cover_url | relative_url }}">
       {%- endif -%}
         <h2>{{ page.title }}</h2>
       <h3><time datetime="{{- page.date | date: site.date_format -}}">{{- page.date | date: site.date_format -}}</time></h3>
