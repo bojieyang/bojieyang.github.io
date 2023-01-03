@@ -4,7 +4,7 @@ title: 警惕没有坚实基础的宏大叙事
 categories: ['投资']
 tags: ['投资', '投资备忘录']
 series: "invest_memo"
-cover_url: "/assets/img/dist/be_wary_of_metanarratives_without_solid_foundations_medium.webp"
+cover_url: "/assets/img/dist/be_wary_of_metanarratives_without_solid_foundations.webp"
 cover_desc: "Photo by Matt Cramblett on Unsplash"
 ---
 成也宏大叙事，败也宏大叙事。
@@ -21,7 +21,7 @@ cover_desc: "Photo by Matt Cramblett on Unsplash"
 
 举几个例子：「共产党领导的中华民族的伟大复兴」是中国政府讲的一个宏大叙事；「二十一世纪是生物的世纪」是在我读高中时期中国教育界讲的一个宏大叙事；「元宇宙」是Facebook讲的一个宏大叙事。
 
-需要注意的是，宏大叙事并不是一个贬义词，而是一个中性词，其本质只是一种观点。有的宏大叙事在若干年后已经变为了现实：在九十年代说「互联网将改变世界」是宏大叙事，过二十年后再看就是事实。
+需要注意的是，宏大叙事并不是一个贬义词，而是一个中性词，其本质只是一种带有预测性的观点。有的宏大叙事在若干年后已经变为了现实：在九十年代说「互联网将改变世界」是宏大叙事，过二十年后再看就是事实。
 
 # 投资中的判断原则
 在投资中的宏大叙事，往往是指某个时期中，在某一个行业存在一种普遍论调称，该行业正在进行或者即将发生一种变化，这种变化持续时间长，影响范围广，且对行业当前的产品技术或商业模式具有颠覆性。比如：「以区块链为基础的去中心化服务将取代现有的中心化服务」，「电动汽车将取代燃油汽车」，「自动驾驶将颠覆打车租车行业」，「智能手机将取代功能机」等。
