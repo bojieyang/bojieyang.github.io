@@ -18,8 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-url: https://bojieyang.github.io
 title: JieTalk
+tagline: "A blog about Wealth and Happiness"
+description: "记录我的思考"
+url: https://bojieyang.github.io
 favicon: /assets/img/favicon.svg
 author:
   name: bojieyang
@@ -45,6 +47,7 @@ server: true
 locale: zh-CN
 date_format: "%Y-%m-%d"
 google_analytics: G-0GENL6L0S9
+google_analytics_enable: true
 webmaster_verifications:
   google: JMoUarH8fRcCgrUK6azhvne5g6Pi0qA5j7yOW3cUyKk
 

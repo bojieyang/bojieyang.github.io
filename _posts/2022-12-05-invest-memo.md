@@ -1,14 +1,16 @@
 ---
 layout: post
 title: 投资备忘录系列开启
+description: "开启投资备忘录系列，不定期更新。"
 categories: ['投资']
 tags: ['投资', '投资备忘录']
 series: "invest_memo"
 series_order: 1
 paginator_enabled: false
 show_copyright_enabled: false
-cover_url: "/assets/img/dist/invest_memo_medium.webp"
-cover_desc: "Photo by Jordan Madrid on Unsplash"
+image:
+  path: "/assets/img/dist/invest_memo_medium.webp"
+  alt: "Photo by Jordan Madrid on Unsplash"
 ---
 念念不忘，必有回响。
 <!--more-->

@@ -9,16 +9,19 @@
   
   <link rel="stylesheet" href="/assets/css/main.css" />
   <link rel="icon" href="{{ site.favicon | relative_url }}" sizes="any" type="image/svg+xml" /> 
-  <title>
-    {%- if page.title -%} {{ page.title }} {%- else -%} {{ site.title }} {%-
-    endif -%}
-  </title>
+  <!-- 
+ 
+  -->
 
-  {%- if jekyll.environment == 'production' and site.seo_tag_enable -%} 
-    {%-seo title=false-%} 
+  {%- if site.seo_tag_enable -%} 
+    {% seo %} 
+    {%- else -%}
+    <title>
+      {%- if page.title -%} {{ page.title }} {%- else -%} {{ site.title }} {%- endif -%}
+    </title>
   {%- endif -%} 
   
-  {%- if jekyll.environment == 'production' and site.google_analytics -%} 
+  {%- if jekyll.environment == 'production' and site.google_analytics_enable -%} 
     {%- include google-analytics.html -%}
   {%- endif -%}
 </head>

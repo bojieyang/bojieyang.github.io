@@ -7,8 +7,9 @@ series: "birth_of_planned_today_app"
 paginator_enabled: false
 show_copyright_enabled: false
 updated_at: 2022-07-21
-cover_url: "/assets/img/dist/birth_of_planned_today_app_medium.webp"
-cover_desc: "Photo by Glenn Carstens-Peters on Unsplash"
+image:
+  path: "/assets/img/dist/birth_of_planned_today_app_medium.webp"
+  alt: "Photo by Glenn Carstens-Peters on Unsplash"
 ---
 记录我创建 planned.today 的过程。
 <!--more-->

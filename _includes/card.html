@@ -3,21 +3,6 @@
         <sup class="latest">最新</sup>
         {% endif %}
     <a href="{{ post.url | relative_url }}">
-         <!-- 
-    {% if post.cover_url %}
-    <figure>
-        <img
-            alt="{{ post.title }}"
-            src= "{{ post.cover_url }}"
-          />
-          {% if post.cover_desc %}
-            <figcaption>
-                {{ post.cover_desc }}
-            </figcaption>
-          {% endif %}
-    </figure>
-    {% endif %}
-     --> 
     <h3>
         {{ post.title }}
     </h3>

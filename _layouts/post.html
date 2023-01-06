@@ -5,8 +5,8 @@ paginator_enabled: true
 <main class="post_container">
   <article>
     <header>
-      {%- if page.cover_url -%}
-      <img title="{{ page.cover_desc }}" alt="{{ page.cover_desc }}" src="{{ page.cover_url | relative_url }}">
+      {%- if page.image.path -%}
+      <img title="{{ page.image.alt }}" alt="{{ page.image.alt }}" src="{{ page.image.path | relative_url }}">
       {%- endif -%}
         <h2>{{ page.title }}</h2>
       <h3><time datetime="{{- page.date | date: site.date_format -}}">{{- page.date | date: site.date_format -}}</time></h3>

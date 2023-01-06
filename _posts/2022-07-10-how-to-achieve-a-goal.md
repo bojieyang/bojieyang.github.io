@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 怎样才能达成一个目标
+description: 只有真正明白了目标对自己的意义，才会有持久的动力
 categories: ['个人成长']
 tags: ['个人成长', '达成目标', '方法论']
 ---
