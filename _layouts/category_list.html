@@ -8,7 +8,7 @@ layout: default
         {% for category in site.categories %}
             {% assign category_name = category[0] %}
         <samp>
-            <a href="/categories/#{{ category_name }}">{{ category_name }}</a>
+            <a aria-label="访问{{ category_name }}分类页" href="/categories/#{{ category_name }}">{{ category_name }}</a>
         </samp>
         {% endfor %}
     </section>

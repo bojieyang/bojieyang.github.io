@@ -13,7 +13,7 @@
 
     <div class="more">
         {%- assign remain_posts_count=site.posts.size | minus:show_lastest_size  -%}
-        <a href="{% link archive.md %}">还有{{ remain_posts_count }}篇文章，前往 👉</a>
+        <a aria-label="查看更多文章" href="{% link archive.md %}">还有{{ remain_posts_count }}篇文章，前往 👉</a>
     </div>
     {% comment %}
     {%- if entry.category -%} 

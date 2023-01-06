@@ -51,7 +51,7 @@ paginator_enabled: true
         <ol>
           {% for serie in current_series %}
           {% if page.id != serie.id %}
-          <li> <a href="{{ serie.url }}">{{ serie.title }}</a><em><small>&emsp;{{ serie.date | timeago }}</small></em>
+          <li> <a aria-label="访问{{ serie.title }}文章" href="{{ serie.url }}">{{ serie.title }}</a><em><small>&emsp;{{ serie.date | timeago }}</small></em>
           {%-else-%}
           <li><em>{{ serie.title }}<small>&emsp;{{ serie.date | timeago }}</small></em></li>
           {% endif %}
@@ -76,11 +76,11 @@ paginator_enabled: true
     {% if page.paginator_enabled %}
     <section style="justify-content: space-around">
           {% if page.previous %}
-              <a href="{{ page.previous.url }}">上一篇</a> 
+              <a aria-label="访问上一篇文章" href="{{ page.previous.url }}">上一篇</a> 
           {% endif %}
-          <a href="{{ site.url }}">回首页</a> 
+          <a aria-label="会到首页" href="{{ site.url }}">回首页</a> 
           {% if page.next %}        
-              <a href="{{ page.next.url }}">下一篇</a>
+              <a aria-label="访问下一篇文章" href="{{ page.next.url }}">下一篇</a>
           {% endif %}
     </section>
     {% endif %}

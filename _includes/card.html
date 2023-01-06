@@ -2,7 +2,7 @@
     {%- if forloop.first -%}
         <sup class="latest">最新</sup>
         {% endif %}
-    <a href="{{ post.url | relative_url }}">
+    <a aria-label="访问文章详情" href="{{ post.url | relative_url }}">
     <h3>
         {{ post.title }}
     </h3>
