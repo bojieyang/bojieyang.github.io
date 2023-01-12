@@ -197,20 +197,21 @@ small > p {
 /* darkmode switch */
 
 .darkmode-switch {
+    box-sizing: border-box;
     text-align: start;
-    font-family: var(--font-family);
-    width: 100%;
-    height: 100%;
-    border: none;
+    border-radius: 50%;
     background-color: var(--dark);
     border: 1px solid var(--dark);
-    border-radius: 100%;
-    font-size: initial;
-
-
+    width: 28px;
+    height: 28px;
 }
 
 .darkmode-switch:hover {
     cursor: pointer;
-   // filter: brightness(var(--hover-brightness));
+}
+
+.moon {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-family);
 }
