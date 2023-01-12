@@ -2,12 +2,10 @@
 <html lang="{{ page.lang | default: 'zh-CN' }}">
   {%- include head.html -%}
   <body>
-    {%- include header.html -%}
-    {{ content }}
-
-    {%- include footer.html -%}
-
-    {% if page.custom_js %} {% for js_file in page.custom_js %}
+    {%- include darkmode.html -%}
+    
+    {%- include header.html -%} {{ content }} {%- include footer.html -%} {% if
+    page.custom_js %} {% for js_file in page.custom_js %}
     <script
       type="text/javascript"
       src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"

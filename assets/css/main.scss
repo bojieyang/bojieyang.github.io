@@ -10,7 +10,9 @@
 }
 /* chinese font start from PingFang SC */
 :root {
-    --font-family: -apple-system,system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+    --light: var(--color-bg);
+    --dark: var(--color-text);
+    --font-family: -aple-system,system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
 
 aside a {
@@ -89,12 +91,6 @@ section aside mark.update {
     background-color:#ff1493;
 
 }
-@media (prefers-color-scheme: dark) {
-    section aside mark.update {
-        background-color:#9932cc;    
-    }
-}
-
 
 section aside mark small {
     color:#ffffff;
@@ -196,4 +192,25 @@ small > p {
     background-clip: text;
     -webkit-background-clip: text;
     color:transparent;
+}
+
+/* darkmode switch */
+
+.darkmode-switch {
+    text-align: start;
+    font-family: var(--font-family);
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--dark);
+    border: 1px solid var(--dark);
+    border-radius: 100%;
+    font-size: initial;
+
+
+}
+
+.darkmode-switch:hover {
+    cursor: pointer;
+   // filter: brightness(var(--hover-brightness));
 }
