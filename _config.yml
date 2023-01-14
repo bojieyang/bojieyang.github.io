@@ -48,6 +48,7 @@ locale: zh-CN
 date_format: "%Y-%m-%d"
 google_analytics: G-0GENL6L0S9
 google_analytics_enable: true
+clarity_enable: true
 webmaster_verifications:
   google: JMoUarH8fRcCgrUK6azhvne5g6Pi0qA5j7yOW3cUyKk
 
