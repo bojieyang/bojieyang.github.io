@@ -11,7 +11,7 @@ image:
   path: "/assets/img/dist/birth_of_planned_today_app_medium.webp"
   alt: "Photo by Glenn Carstens-Peters on Unsplash"
 ---
-记录我创建 planned.today 的过程。
+记录我创建 <code>planned.today</code> 的过程。
 <!--more-->
 
 ***

@@ -1,7 +1,8 @@
-<script defer src="https://unpkg.com/mermaid@9.1.4/dist/mermaid.min.js"></script>
-<script>
-    let dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    let themeColor = dark ? "dark" : "default";
+<!-- https://unpkg.com/mermaid@9.3.0/dist/mermaid.esm.min.mjs -->
+<script type="module">
+  import mermaid from 'https://cdn.staticfile.org/mermaid/9.3.0/mermaid.esm.min.mjs';
+  let dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  let themeColor = dark ? "dark" : "default";
    document.addEventListener("DOMContentLoaded", function(event) {
     mermaid.initialize({
       startOnLoad:false,
