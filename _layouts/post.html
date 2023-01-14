@@ -3,7 +3,7 @@ layout: default
 paginator_enabled: true
 ---
 <main class="post_container">
-  <article>
+  <article data-clarity-region="article">
     <header>
       {%- if page.image.path -%}
       <img title="{{ page.image.alt }}" alt="{{ page.image.alt }}" src="{{ page.image.path | relative_url }}">
