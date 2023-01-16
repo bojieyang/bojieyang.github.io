@@ -2,7 +2,7 @@
   {%- for serie in series -%}
     {%- assign latest_within_serie = site.posts | where: 'series', serie.name | sort: 'date' | reverse | first -%}
 
-    <aside class="serie_card">
+    <aside class="serie_card" onclick="window.location.href='{{ latest_within_serie.url | relative_url }}'">
       {%- if serie.state == 'ongoing' -%}
         <sup class="ongoing">持续更新中</sup>
       {%- elsif serie.state == 'suspend' -%}
