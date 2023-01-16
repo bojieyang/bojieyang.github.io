@@ -10,7 +10,6 @@ public
 .env
 .env.build
 .vercel
-*.html
 *.yml
 *.md
 *.scss

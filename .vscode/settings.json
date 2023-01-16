@@ -1,21 +1,27 @@
 {
-    "editor.formatOnSave": true,
-    "go.toolsManagement.autoUpdate": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
- 
-    "[javascriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]":{
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      
-    },
-    "[scss]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "go.toolsManagement.autoUpdate": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
 
-    "eslint.format.enable": false,
-    "eslint.enable":true,
-    "eslint.packageManager":"npm",
-  }
-  
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
+    "editor.formatOnSave": true
+  },
+
+  "files.associations": {
+    "*.html": "liquid"
+  },
+  "eslint.format.enable": false,
+  "eslint.enable": true,
+  "eslint.packageManager": "npm"
+}
