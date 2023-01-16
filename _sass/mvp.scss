@@ -40,6 +40,7 @@ article aside {
 body {
     background: var(--color-bg);
     color: var(--color-text);
+    
     font-family: var(--font-family);
     font-size: var(--font-size);
     line-height: var(--line-height);
@@ -227,19 +228,24 @@ sup {
 /* Links */
 a {
     color: var(--color-link);
+    background-color: transparent;
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
+    touch-action: manipulation;
 }
 
+/*
 a:active {
     filter: brightness(var(--active-brightness));
     text-decoration: underline;
 }
-
+*/
+a:active,
 a:hover {
-    filter: brightness(var(--hover-brightness));
+    //filter: brightness(var(--hover-brightness));
     text-decoration: underline;
+    outline-width: 0;
 }
 
 a b,
