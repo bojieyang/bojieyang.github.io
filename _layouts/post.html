@@ -6,13 +6,19 @@ paginator_enabled: true
   <article data-clarity-region="article">
     <header>
       {%- if page.image.path -%}
-      <img title="{{ page.image.alt }}" alt="{{ page.image.alt }}" src="{{ page.image.path | relative_url }}">
+        <img title="{{ page.image.alt }}" alt="{{ page.image.alt }}" src="{{ page.image.path | relative_url }}">
       {%- endif -%}
-        <h2>{{ page.title }}</h2>
-      <h3><time datetime="{{- page.date | date: site.date_format -}}">{{- page.date | date: site.date_format -}}</time></h3>
+      <h2>{{ page.title }}</h2>
+      <h3>
+        <time datetime="{{- page.date | date: site.date_format -}}">{{- page.date | date: site.date_format -}}</time>
+      </h3>
       {% if page.updated_at %}
-      <small>最后更新于：<time datetime="{{- page.updated_at | date: site.date_format -}}">{{- page.updated_at | date: site.date_format -}}</time></small>
-      {% endif %}      
+        <small
+          >最后更新于：<time datetime="{{- page.updated_at | date: site.date_format -}}">
+            {{- page.updated_at | date: site.date_format -}}
+          </time></small
+        >
+      {% endif %}
     </header>
     <div class="main">
       {{ content }}
@@ -21,69 +27,85 @@ paginator_enabled: true
     {% if page.tags.size > 0 %}
       <section>
         {% for tag in page.tags %}
-        <samp>
-          <a href="/tags/#{{ tag }}"><small>#{{ tag }}</small></a>
-      </samp>
+          <samp>
+            <a href="/tags/#{{ tag }}"
+              ><small>#{{ tag }}</small></a
+            >
+          </samp>
         {% endfor %}
       </section>
     {% endif %}
 
     {% if page.show_copyright_enabled %}
-    <section class="copyright">
-      <header>
-        <small><span style="font-family:arial;">&copy;</span> 本文版权使用<a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a>(自由转载-非商用-非衍生-保持署名)</small>
-      </header>
-      <hr>
-    </section>
+      <section class="copyright">
+        <header>
+          <small
+            ><span style="font-family:arial;">&copy;</span>
+            本文版权使用<a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a
+            >(自由转载-非商用-非衍生-保持署名)</small
+          >
+        </header>
+        <hr>
+      </section>
     {% endif %}
-    
 
-      {% if page.mermaid %}
-        {% include mermaid.html %}
-      {% endif %}
-  
-      {% if page.series %}
+    {% if page.mermaid %}
+      {% include mermaid.html %}
+    {% endif %}
+
+    {% if page.series %}
       <section>
         <details open>
           <summary>本系列文章列表</summary>
-        {% assign current_series = site.posts | where: "series", page.series | sort: 'date' | sort: 'series_order' %}
-        {% if current_series.size > 0 %}
-        <ol>
-          {% for serie in current_series %}
-          {% if page.id != serie.id %}
-          <li> <a aria-label="访问{{ serie.title }}文章" href="{{ serie.url }}">{{ serie.title }}</a><em><small>&emsp;{{ serie.date | timeago }}</small></em>
-          {%-else-%}
-          <li><em>{{ serie.title }}<small>&emsp;{{ serie.date | timeago }}</small></em></li>
+          {% assign current_series = site.posts | where: 'series', page.series | sort: 'date' | sort: 'series_order' %}
+          {% if current_series.size > 0 %}
+            <ol>
+              {% for serie in current_series %}
+                {% if page.id != serie.id %}
+                  <li>
+                    <a aria-label="访问{{ serie.title }}文章" href="{{ serie.url }}"> {{ serie.title }}</a>
+                    <em>
+                      <small>&emsp;{{ serie.date | timeago }}</small>
+                    </em>
+                  </li>
+                {%- else -%}
+                  <li>
+                    <em>
+                      {{- serie.title -}}
+                      <small>&emsp;{{ serie.date | timeago }}</small>
+                    </em>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ol>
           {% endif %}
-          {% endfor %}
-        </ol>
-        {% endif %}
-      </details>
+        </details>
       </section>
-      {% endif %}
-    
-  {% if page.show_related_posts_enabled %}
-    {%assign category_name = page.categories[0] %}
-    <section>
-      <details open>
-        <summary>「{{ category_name }}」分类下的其他文章</summary>
-    {% assign posts_in_same_category_except_current_post = site.categories[category_name] | where_exp:"item", "item.id != page.id" %}
-    {% include post_list_fragment.html posts=posts_in_same_category_except_current_post show_tag=true limit_size=5 %}
-    </details>
-    </section>
-  {% endif %}
-
-    {% if page.paginator_enabled %}
-    <section style="justify-content: space-around">
-          {% if page.previous %}
-              <a aria-label="访问上一篇文章" href="{{ page.previous.url }}">上一篇</a> 
-          {% endif %}
-          <a aria-label="会到首页" href="{{ site.url }}">回首页</a> 
-          {% if page.next %}        
-              <a aria-label="访问下一篇文章" href="{{ page.next.url }}">下一篇</a>
-          {% endif %}
-    </section>
     {% endif %}
 
+    {% if page.show_related_posts_enabled %}
+      {% assign category_name = page.categories[0] %}
+      <section>
+        <details open>
+          <summary>「{{ category_name }}」分类下的其他文章</summary>
+          {% assign posts_in_same_category_except_current_post = site.categories[category_name]
+            | where_exp: 'item', 'item.id != page.id'
+          %}
+          {% include post_list_fragment.html posts=posts_in_same_category_except_current_post show_tag=true limit_size=5 %}
+        </details>
+      </section>
+    {% endif %}
+
+    {% if page.paginator_enabled %}
+      <section style="justify-content: space-around">
+        {% if page.previous %}
+          <a aria-label="访问上一篇文章" href="{{ page.previous.url }}">上一篇</a>
+        {% endif %}
+        <a aria-label="会到首页" href="{{ site.url }}">回首页</a>
+        {% if page.next %}
+          <a aria-label="访问下一篇文章" href="{{ page.next.url }}">下一篇</a>
+        {% endif %}
+      </section>
+    {% endif %}
   </article>
 </main>

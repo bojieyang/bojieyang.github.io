@@ -1,37 +1,39 @@
 <section>
-    {%- for serie in series -%}
-    {%- assign latest_within_serie = site.posts | where: "series", serie.name | sort: "date" | reverse | first -%}
-    
+  {%- for serie in series -%}
+    {%- assign latest_within_serie = site.posts | where: 'series', serie.name | sort: 'date' | reverse | first -%}
+
     <aside style="position:relative;">
-        {%- if serie.state == 'ongoing' -%}
+      {%- if serie.state == 'ongoing' -%}
         <sup class="ongoing">持续更新中</sup>
-        {%- elsif serie.state == 'suspend' -%}
+      {%- elsif serie.state == 'suspend' -%}
         <sup class="suspend">暂停更新</sup>
-        {%- endif -%}
-        <a aria-label="访问文章详情" href="{{ latest_within_serie.url | relative_url }}">
+      {%- endif -%}
+      <a aria-label="访问文章详情" href="{{ latest_within_serie.url | relative_url }}">
         {%- if serie.cover_url -%}
-            <div class="card_img" style="background-image:url('{{ serie.cover_url | absolute_url }}')">
-            </div>
+          <div class="card_img" style="background-image:url('{{ serie.cover_url | absolute_url }}')"></div>
         {%- endif -%}
-        <a aria-label="访问文章详情" href="{{ latest_within_serie.url | relative_url }}">
+
         <h3>{{ serie.title }}</h3>
-                
+
         <mark class="update"><small>更新于</small></mark> <small>{{ latest_within_serie.date | timeago }} </small>
-        <p> {{ serie.excerpt }} </p>
+        <p>{{ serie.excerpt }}</p>
         {%- if serie.extra -%}
-        <p> <small>{{ serie.extra }}</small></p>
+          <p>
+            <small>{{ serie.extra }}</small>
+          </p>
         {%- endif -%}
-        </a>
-        {%- if serie.tags.size > 0 -%}
+      </a>
+      {%- if serie.tags.size > 0 -%}
         <div>
-            {%- for tag in serie.tags -%}
+          {%- for tag in serie.tags -%}
             <samp>
-                <a href="/tags/#{{ tag }}"><small>#{{ tag }}</small></a>
+              <a href="/tags/#{{ tag }}"
+                ><small>#{{ tag }}</small></a
+              >
             </samp>
-            {%-endfor-%}
+          {%- endfor -%}
         </div>
-        {%-endif-%}
+      {%- endif -%}
     </aside>
-    
-    {% endfor %}
-    </section>
+  {% endfor %}
+</section>

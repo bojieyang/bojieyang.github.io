@@ -1,32 +1,34 @@
-
 {% if include.posts.size > 0 %}
-<ul>
+  <ul>
     {% for post in include.posts %}
-    
-    {% if include.limit_size %}
+      {% if include.limit_size %}
         {% if forloop.index > include.limit_size %}
-            {% break %}
+          {% break %}
         {% endif %}
-    {% endif %}
-    <li>
-         <a aria-label="访问文章详情" href="{{ post.url | absolute_url }}"> {{ post.title }}</a> 
-         {% if include.show_category %}
-         <samp>
+      {% endif %}
+      <li>
+        <a aria-label="访问文章详情" href="{{ post.url | absolute_url }}"> {{ post.title }}</a>
+        {% if include.show_category %}
+          <samp>
             <a aria-label="前往{{ post.categories[0] }}分类页" href="/categories/#{{ post.categories[0] }}">
-                <small>{{ post.categories[0] }}</small></a>
-        </samp>
-         {% endif %}
-         {% if include.show_tag %}
-         {% for tag in post.tags limit:3 %}
-         <samp>
-            <a aria-label="前往{{ tag }}标签页" href="/tags/#{{ tag }}"><small>#{{ tag }}</small></a>
-        </samp>
-         {% endfor %}
-        
-         {% endif %}
-         <em><small>&emsp;{{ post.date | timeago }}</small></em>
+              <small>{{ post.categories[0] }}</small></a
+            >
+          </samp>
+        {% endif %}
+        {% if include.show_tag %}
+          {% for tag in post.tags limit: 3 %}
+            <samp>
+              <a aria-label="前往{{ tag }}标签页" href="/tags/#{{ tag }}"
+                ><small>#{{ tag }}</small></a
+              >
+            </samp>
+          {% endfor %}
+        {% endif %}
+        <em
+          ><small>&emsp;{{ post.date | timeago }}</small></em
+        >
         <small>{{ post.excerpt }}</small>
-    </li>
-{% endfor %}
-</ul>
+      </li>
+    {% endfor %}
+  </ul>
 {% endif %}

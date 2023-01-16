@@ -1,19 +1,7 @@
 ---
 layout: default
 ---
-
 <main>
-    <!-- 
-    <div class="intro">
-            <img alt="avatar" src="{% link /assets/img/favicon.svg %}" width="96" height="96">
-            <div class="desc">
-                在这里
-                <div class="emoji">🌬🐮</div>
-                <div class="desc">但会先打草稿</div>
-            </div>
-    </div>
-   --> 
-   
-{%-include menu_item.html collection=site.data.menu.entries-%} 
-{{ content }}
+  {%- include menu_item.html collection=site.data.menu.entries -%}
+  {{ content }}
 </main>

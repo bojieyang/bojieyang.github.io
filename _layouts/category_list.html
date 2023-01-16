@@ -2,28 +2,26 @@
 layout: default
 ---
 <header>
-    <h1> {{ page.title }} </h1>
+  <h1>{{ page.title }}</h1>
 
-    <section class="tag_list">
-        {% for category in site.categories %}
-            {% assign category_name = category[0] %}
-        <samp>
-            <a aria-label="访问{{ category_name }}分类页" href="/categories/#{{ category_name }}">{{ category_name }}</a>
-        </samp>
-        {% endfor %}
-    </section>
+  <section class="tag_list">
+    {% for category in site.categories %}
+      {% assign category_name = category[0] %}
+      <samp>
+        <a aria-label="访问{{ category_name }}分类页" href="/categories/#{{ category_name }}">{{ category_name }}</a>
+      </samp>
+    {% endfor %}
+  </section>
 </header>
 <main>
-
-{% for category in site.categories %}
-    
+  {% for category in site.categories %}
     {% assign category_name = category[0] %}
     <article id="{{ category_name }}">
-        <aside>
-            <h3>{{ category_name }}</h3>
-        </aside>
+      <aside>
+        <h3>{{ category_name }}</h3>
+      </aside>
     </article>
     {% assign current_category_posts = site.categories[category_name] %}
-    {% include post_list_fragment.html posts=current_category_posts show_tag=true %}    
-{% endfor %}
+    {% include post_list_fragment.html posts=current_category_posts show_tag=true %}
+  {% endfor %}
 </main>

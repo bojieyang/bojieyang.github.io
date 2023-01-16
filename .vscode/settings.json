@@ -14,8 +14,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[liquid]": {
-    "editor.defaultFormatter": "Shopify.theme-check-vscode",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "Shopify.theme-check-vscode"
   },
 
   "files.associations": {
