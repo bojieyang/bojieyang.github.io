@@ -1,13 +1,14 @@
 <section>
   {%- for serie in series -%}
     {%- assign latest_within_serie = site.posts | where: 'series', serie.name | sort: 'date' | reverse | first -%}
-
     <aside class="serie_card" onclick="window.location.href='{{ latest_within_serie.url | relative_url }}'">
-      {%- if serie.state == 'ongoing' -%}
-        <sup class="ongoing">持续更新中</sup>
-      {%- elsif serie.state == 'suspend' -%}
-        <sup class="suspend">暂停更新</sup>
-      {%- endif -%}
+      <div class="flag">
+        {%- if serie.state == 'ongoing' -%}
+          <sup class="ongoing">持续更新中</sup>
+        {%- elsif serie.state == 'suspend' -%}
+          <sup class="suspend">暂停更新</sup>
+        {%- endif -%}
+      </div>
       <a aria-label="访问文章详情" href="{{ latest_within_serie.url | relative_url }}">
         {%- if serie.cover_url -%}
           <div class="card_img" style="background-image:url('{{ serie.cover_url | absolute_url }}')"></div>

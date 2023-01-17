@@ -16,10 +16,14 @@
 }
 
 /* serie card */
-.serie_card {
-    position: relative;
+.darkmode--activated .serie_card {
+    border: 1px solid var(--color-text);
 }
 
+.darkmode--activated .serie_card .card_img {
+    mix-blend-mode: difference;
+}
+/* 
 .serie_card a {
     text-decoration: none; 
     font-weight:normal;
@@ -40,7 +44,7 @@
    color: var(--color-bg);
 }
 
-
+*/
 
 
 aside h1,
@@ -62,8 +66,7 @@ aside h3 + small {
     height: 190px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-   
+    background-size: cover;   
 }
   /* 仅在desktop browser 下启用 card 的图片动效 */
 @media only screen and (min-width:961px) {
@@ -127,6 +130,12 @@ img + em {
     font-size: small;
 }
 
+.serie_card > .flag {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
 sup.latest {
     position:absolute;
     right: -8px;
@@ -134,10 +143,10 @@ sup.latest {
 }
 
 sup.ongoing {
-    transform: skewY(-30deg); 
     position:absolute;
-    left: -10px;
-    top: 5px;
+    transform: skewY(-30deg); 
+    left: -30px;
+    top: -20px;
     border-radius: 0px 0px 0px 0px;
 }
 
@@ -145,8 +154,8 @@ sup.suspend {
     transform: skewY(-30deg);
     background: linear-gradient(-30deg, var(--color-text-secondary), var(--color-bg-secondary));
     position:absolute;
-    left: -10px;
-    top: 5px;
+    left: -30px;
+    top: -20px;
     border-radius: 0px 0px 0px 0px;
 }
 
