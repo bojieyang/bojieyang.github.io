@@ -19,8 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: JieTalk
-tagline: "A blog about Wealth, Happiness and Preferences"
-description: "记录我的思考"
+tagline: "杰说"
+description: "A personal blog about Wealth, Happiness and Preferences"
 url: https://bojieyang.github.io
 favicon: /assets/img/favicon.svg
 author:
