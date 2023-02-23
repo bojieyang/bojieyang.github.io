@@ -41,4 +41,4 @@ image:
 
 如果你认同了这个观点，不妨在下次做投资决策时试一试。
 
-[^Mental-Accounting]:[心理账户的相关解释说明]("https://wiki.mbalib.com/wiki/心理账户", "心理账户的相关解释说明")
+[^Mental-Accounting]:[心理账户的相关解释说明](https://wiki.mbalib.com/wiki/心理账户 "心理账户的相关解释说明")
