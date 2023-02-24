@@ -24,10 +24,12 @@
             </samp>
           {% endfor %}
         {% endif %}
-        <em
-          ><small>&emsp;{{ post.date | timeago }}</small></em
-        >
-        <small>{{ post.excerpt }}</small>
+        <em>
+          <small>&emsp;{{ post.date | timeago }}</small>
+        </em>
+        <div>
+          <small>{{ post.excerpt }}</small>
+        </div>
       </li>
     {% endfor %}
   </ul>

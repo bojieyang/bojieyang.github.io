@@ -1,6 +1,7 @@
 ---
 layout: post
 title: planned.today 诞生记
+excerpt: "记录我创建 <code>planned.today</code> 的过程。"
 categories: ['产品心得']
 tags: ['创造的乐趣', 'planned.today']
 series: "birth_of_planned_today_app"
@@ -11,10 +12,7 @@ image:
   path: "/assets/img/dist/birth_of_planned_today_app_medium.webp"
   alt: "Photo by Glenn Carstens-Peters on Unsplash"
 ---
-记录我创建 <code>planned.today</code> 的过程。
-<!--more-->
 
-***
 {: data-content='正文开始'}
 
 * toc 

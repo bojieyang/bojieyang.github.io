@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 什么是企业的竞争优势
+excerpt: "竞争优势就是进入壁垒。"
 categories: ['投资']
 tags: ["投资", "读书笔记"]
 book:
@@ -8,13 +9,9 @@ book:
   isbn: 9787111686439
 ---
 
-竞争优势就是进入壁垒。
+{: data-content='正文开始'}
 
-<!--more-->
-
----
-
-- toc
+* toc 
 {:toc}
 
 # 什么是竞争优势

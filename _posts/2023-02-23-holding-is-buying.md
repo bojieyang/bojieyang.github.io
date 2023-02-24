@@ -4,16 +4,13 @@ title: 持有等于买入
 categories: ['投资']
 tags: ['投资', '投资备忘录']
 series: "invest_memo"
+excerpt: 这是一个强大的思维工具，可以帮助你摆脱心理账户对投资的影响。
 image:
   path: "/assets/img/dist/holding_is_buying.webp"
   alt: "Photo by Kelly Sikkema on Unsplash"
-
-  
 ---
-这是一个强大的思维工具，可以帮助你摆脱心理账户对投资的影响。
-<!--more-->
 
-***
+
 {: data-content='正文开始'}
 
 * toc 

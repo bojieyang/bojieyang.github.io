@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 发现十倍股系列导读
+excerpt: "本文是发现十倍股系列的导读篇，帮助你更好的理解和使用相关投资方法。"
 categories: ['投资']
 tags: ['投资', '发现十倍股']
 series: "find_tenfold_stocks"
@@ -11,10 +12,7 @@ image:
   path: "/assets/img/dist/find_tenfold_stocks_medium.webp"
   alt:  "Photo by Isaac Smith on Unsplash"
 ---
-本文是发现十倍股系列的导读篇，帮助你更好的理解和使用相关投资方法。
-<!--more-->
 
-***
 {: data-content='正文开始'}
 
 * toc 

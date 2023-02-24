@@ -29,10 +29,11 @@ author:
 timezone: Asia/Shanghai
 #permalink: /:year/:month/:title:output_ext
 permalink: /posts/:slug/
-excerpt_separator: <!--more-->
-auto: true
-server: true
-#show_excerpts: true
+#excerpt_separator: <!--more-->
+#auto: true
+#server: true
+#page_excerpts: false
+#show_excerpts: false
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -45,7 +46,8 @@ server: true
 #  date_format: "%Y-%m-%d" # customize how date is formatted
 #  show_description: true # show blog description in home page
 locale: zh-CN
-date_format: "%Y-%m-%d"
+date_format: "%Y 年 %m 月 %d 日"
+#date_format: "%Y-%m-%d"
 google_analytics: G-0GENL6L0S9
 google_analytics_enable: true
 clarity_enable: true

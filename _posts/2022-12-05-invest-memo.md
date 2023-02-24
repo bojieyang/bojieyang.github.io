@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 投资备忘录系列开启
-description: "开启投资备忘录系列，不定期更新。"
+excerpt: "开启投资备忘录系列，不定期更新。"
 categories: ['投资']
 tags: ['投资', '投资备忘录']
 series: "invest_memo"
@@ -12,10 +12,7 @@ image:
   path: "/assets/img/dist/invest_memo_medium.webp"
   alt: "Photo by Jordan Madrid on Unsplash"
 ---
-念念不忘，必有回响。
-<!--more-->
 
-***
 {: data-content='正文开始'}
 
 * toc 

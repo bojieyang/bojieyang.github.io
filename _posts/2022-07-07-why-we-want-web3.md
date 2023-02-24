@@ -1,13 +1,11 @@
 ---
 layout: post
 title: 为什么我们想要Web3
+excerpt: "什么是Web3？它能带来哪些好处？我们需要它吗？"
 categories: ['互联网']
 tags: ['web3', '互联网']
 ---
-什么是Web3？它能带来哪些好处？我们需要它吗？
-<!--more-->
 
-***
 {: data-content='正文开始'}
 
 * toc 

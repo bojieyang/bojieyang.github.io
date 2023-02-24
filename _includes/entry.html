@@ -7,13 +7,16 @@
 
 {%- if entry.type == 'latest' and site.posts.size > 0 -%}
   {%- include column_desc.html entry=entry -%}
-  {%- assign show_lastest_size = 3 -%}
+  {%- assign show_lastest_size = 100 -%}
   {% include post_list_fragment.html posts=site.posts show_category=true limit_size=show_lastest_size %}
 
-  <div class="more">
-    {%- assign remain_posts_count = site.posts.size | minus: show_lastest_size -%}
-    <a aria-label="查看更多文章" href="{% link archive.md %}">还有{{ remain_posts_count }}篇文章，前往 👉</a>
-  </div>
+  {%- assign remain_posts_count = site.posts.size | minus: show_lastest_size -%}
+
+  {% if remain_posts_count > 0 %}
+    <div class="more">
+      <a aria-label="查看更多文章" href="{% link archive.md %}">还有{{ remain_posts_count }}篇文章，前往 👉</a>
+    </div>
+  {% endif %}
   {% comment %}
     {%- if entry.category -%}
         {%- assign posts = site.categories[entry.category] -%}

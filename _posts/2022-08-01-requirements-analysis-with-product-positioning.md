@@ -1,15 +1,13 @@
 ---
 layout: post
 title: 用产品定位法进行需求分析
+excerpt: "通过产品定位和切入点来判断需求的必要性与优先级。"
 categories: ['产品心得']
 tags: ['创造的乐趣', 'planned.today', '需求分析', '产品定位', '产品切入点']
 series: "birth_of_planned_today_app"
 mermaid: true
 ---
-通过产品定位和切入点来判断需求的必要性与优先级。
-<!--more-->
 
-***
 {: data-content='正文开始'}
 
 * toc 

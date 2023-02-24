@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 警惕没有坚实基础的宏大叙事
-description: "宏大叙事对发掘某个具体的投资标的的帮助是非常有限的。但适当了解宏大叙事，有助于及时了解行业变化趋势，从而为选择朝阳行业中的好公司打下基础。"
+excerpt: "宏大叙事对发掘某个具体的投资标的的帮助是非常有限的。但适当了解宏大叙事，有助于及时了解行业变化趋势，从而为选择朝阳行业中的好公司打下基础。"
 categories: ['投资']
 tags: ['投资', '投资备忘录']
 series: "invest_memo"
@@ -9,10 +9,7 @@ image:
   path: "/assets/img/dist/be_wary_of_metanarratives_without_solid_foundations.webp"
   alt: "Photo by Matt Cramblett on Unsplash"
 ---
-成也宏大叙事，败也宏大叙事。
-<!--more-->
 
-***
 {: data-content='正文开始'}
 
 * toc 

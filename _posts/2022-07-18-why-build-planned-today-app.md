@@ -1,15 +1,13 @@
 ---
 layout: post
 title: 为什么我要创建 planned.today
+excerpt: "记录我创建<code>planned.today</code>的初心。"
 categories: ['产品心得']
 tags: ['创造的乐趣', 'planned.today']
 series: "birth_of_planned_today_app"
 updated_at: 2022-07-21
 ---
-记录我创建<code>planned.today</code>的初心。
-<!--more-->
 
-***
 {: data-content='正文开始'}
 
 * toc 

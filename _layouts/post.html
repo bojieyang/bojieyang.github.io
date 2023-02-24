@@ -5,36 +5,50 @@ paginator_enabled: true
 <main class="post_container">
   <article data-clarity-region="article">
     <header>
-      {%- if page.image.path -%}
-        <img title="{{ page.image.alt }}" alt="{{ page.image.alt }}" src="{{ page.image.path | relative_url }}">
-      {%- endif -%}
-      <h2>{{ page.title }}</h2>
-      <h3>
-        <time datetime="{{- page.date | date: site.date_format -}}">{{- page.date | date: site.date_format -}}</time>
-      </h3>
-      {% if page.updated_at %}
-        <small
-          >最后更新于：<time datetime="{{- page.updated_at | date: site.date_format -}}">
-            {{- page.updated_at | date: site.date_format -}}
-          </time></small
-        >
-      {% endif %}
+      <div class="post_head">
+        <small class="category_eyebrow">{{ page.categories[0] }}</small>
+        {% if page.updated_at %}
+          <small>
+            <time datetime="{{- page.updated_at | date: site.date_format -}}">
+              {{- page.updated_at | date: site.date_format -}}
+            </time>
+            最后更新
+          </small>
+        {% else %}
+          <small>
+            <time datetime="{{- page.date | date: site.date_format -}}">
+              {{- page.date | date: site.date_format -}}
+            </time>
+          </small>
+        {% endif %}
+        <h2>{{ page.title }}</h2>
+        <div class="post_excerpt">
+          {{ page.excerpt }}
+        </div>
+        {% if page.tags.size > 0 %}
+          <section class="tag_list">
+            {% for tag in page.tags %}
+              <samp>
+                <a aria-label="访问{{ tag }}标签页" href="/tags/#{{ tag }}">#{{ tag }}</a>
+              </samp>
+            {% endfor %}
+          </section>
+        {% endif %}
+
+        <hr>
+        {%- if page.image.path -%}
+          <img title="{{ page.image.alt }}" alt="{{ page.image.alt }}" src="{{ page.image.path | relative_url }}">
+          <div>
+            <small>
+              <i>{{ page.image.alt }}</i>
+            </small>
+          </div>
+        {%- endif -%}
+      </div>
     </header>
     <div class="main">
       {{ content }}
     </div>
-
-    {% if page.tags.size > 0 %}
-      <section>
-        {% for tag in page.tags %}
-          <samp>
-            <a href="/tags/#{{ tag }}"
-              ><small>#{{ tag }}</small></a
-            >
-          </samp>
-        {% endfor %}
-      </section>
-    {% endif %}
 
     {% if page.show_copyright_enabled %}
       <section class="copyright">

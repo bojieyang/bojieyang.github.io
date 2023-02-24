@@ -1,14 +1,12 @@
 ---
 layout: post
 title: 探索目标用户与使用场景
+excerpt: "从用户故事中归纳目标用户，确定各自的使用场景。"
 categories: ['产品心得']
 tags: ['创造的乐趣', 'planned.today', '用户故事']
 series: "birth_of_planned_today_app"
 ---
-从用户故事中归纳目标用户，确定各自的使用场景。
-<!--more-->
 
-***
 {: data-content='正文开始'}
 
 * toc 
