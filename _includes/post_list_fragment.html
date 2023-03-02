@@ -9,19 +9,19 @@
       <li>
         <a aria-label="访问文章详情" href="{{ post.url | absolute_url }}"> {{ post.title }}</a>
         {% if include.show_category %}
-          <samp>
+          <div class="tag_item">
             <a aria-label="前往{{ post.categories[0] }}分类页" href="/categories/#{{ post.categories[0] }}">
-              <small>{{ post.categories[0] }}</small></a
-            >
-          </samp>
+              <small>{{ post.categories[0] }}</small>
+            </a>
+          </div>
         {% endif %}
         {% if include.show_tag %}
           {% for tag in post.tags limit: 3 %}
-            <samp>
+            <div class="tag_item">
               <a aria-label="前往{{ tag }}标签页" href="/tags/#{{ tag }}"
-                ><small>#{{ tag }}</small></a
-              >
-            </samp>
+                ><small>#{{ tag }}</small>
+              </a>
+            </div>
           {% endfor %}
         {% endif %}
         <em>

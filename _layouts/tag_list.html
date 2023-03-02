@@ -6,9 +6,9 @@ layout: default
   <section class="tag_list">
     {% for tag in site.tags %}
       {% assign tag_name = tag[0] %}
-      <samp>
+      <div class="tag_item">
         <a aria-label="访问{{ tag_name }}标签页" href="/tags/#{{ tag_name }}">#{{ tag_name }}</a>
-      </samp>
+      </div>
     {% endfor %}
   </section>
 </header>

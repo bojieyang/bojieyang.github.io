@@ -12,7 +12,9 @@
 /* chinese font start from PingFang SC */
 :root {    
     --dark: var(--color-text);
-    --font-family: -aple-system,system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+    /* Apple website style */
+    --font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    //--font-family: -aple-system,system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
 
 
@@ -142,7 +144,7 @@ sup.suspend {
     max-width: var(--width-post);
 }
 
-.post_head h2 {
+.post_head h1 {
     margin-block-start: 0.1em;  
 }
 
@@ -155,8 +157,9 @@ sup.suspend {
 
 .post_excerpt {
     margin-block-end: 0.83em;
-    font-weight: bold;
+    //font-weight: bold;
 }
+
  .post_head > hr {
     margin-block-start: 0.4em;
 }
@@ -202,13 +205,30 @@ small > p {
     margin-block-end: 0.83em;
 }
 
-.tag_list > samp {
+.tag_item {
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius);
+    color: var(--color-text);
+    display: inline-block;
+    margin: 0 0.1rem;
+    padding: 0 0.5rem;
+    //font-family: var(--font-family);
+    
+
+}
+
+.tag_item a {
+    font-size: small;
+    font-weight:normal;
+}
+
+.tag_list > .tag_item {   
     margin: 0.2rem 0.2rem;
 }
 
 .nav_font {
     font-size: larger;
-    font-weight: 400;
+    font-weight:normal;
     background:linear-gradient(45deg,#e5b751,#1677b3,#cc5595 80%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -244,3 +264,13 @@ button {
     margin: 0;
 }
 
+/*
+samp {
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius);
+    color: var(--color-text);
+    display: inline-block;
+    margin: 0 0.1rem;
+    padding: 0 0.5rem;
+}
+*/
