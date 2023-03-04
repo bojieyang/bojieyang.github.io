@@ -1,4 +1,12 @@
-
+- 
+  name: annual_challenge_2023
+  type: series
+  title: "年度挑战-2023"
+  intro: "annual-challenge-2023"
+  excerpt: "2023的年度挑战是做一百道菜。"
+  tags: ["生活","年度挑战-2023", "烹饪"]
+  cover_url: "/assets/img/dist/annual_challenge_2023.webp"
+  cover_desc: "Photo by Chinh Le Duc on Unsplash"
 - 
   name: find_tenfold_stocks
   type: series
