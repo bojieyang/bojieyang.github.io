@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "predev": "npm run squoosh",
+    "dev": "jekyll s",
+    "squoosh": "scripts/squoo.sh -s ./assets/img/ -d ./assets/img/dist/"
+  },
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.0.5",
     "eslint": "^8.31.0",
