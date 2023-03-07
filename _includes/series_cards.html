@@ -13,8 +13,12 @@
         {%- if serie.cover_url -%}
           <div class="card_img" style="background-image:url('{{ serie.cover_url | absolute_url }}')"></div>
         {%- endif -%}
-
-        <h3>{{ serie.title }}</h3>
+        <div class="card_eyebrow">
+          <h3>{{ serie.title }}</h3>
+          <div class="tag_item">
+            {{ serie.categories[0] }}
+          </div>
+        </div>
       </a>
       <mark class="update"><small>更新于</small></mark> <small>{{ latest_within_serie.date | timeago }} </small>
       <p>{{ serie.excerpt }}</p>

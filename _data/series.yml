@@ -1,9 +1,10 @@
 - 
   name: annual_challenge_2023
   type: series
-  title: "年度挑战-2023"
+  title: "年度挑战 - 2023"
   intro: "annual-challenge-2023"
-  excerpt: "2023的年度挑战是做一百道菜。"
+  excerpt: "2023 的年度挑战是做一百道菜。"
+  categories: ["生活方式"]
   tags: ["年度挑战-2023", "烹饪"]
   cover_url: "/assets/img/dist/annual_challenge_2023.webp"
   cover_desc: "Photo by Chinh Le Duc on Unsplash"
@@ -13,7 +14,8 @@
   title: "发现十倍股系列"
   intro: "find-tenfold-stocks"
   excerpt: "介绍几种发现潜在十倍股的方法。"
-  tags: ["投资", "发现十倍股"]
+  categories: ["投资"]
+  tags: ["发现十倍股"]
   cover_url: "/assets/img/dist/find_tenfold_stocks_small.webp"
   cover_desc: "Photo by Isaac Smith on Unsplash"
 - 
@@ -22,7 +24,8 @@
   title: "投资备忘录"
   intro: invest-memo
   excerpt: "不定期更新的投资备忘录。"
-  tags: ["投资", "投资备忘录"]
+  categories: ["投资"]
+  tags: ["投资备忘录"]
   cover_url: "/assets/img/dist/invest_memo_small.webp"
   cover_desc: "Photo by Jordan Madrid on Unsplash"
 
@@ -34,6 +37,7 @@
   intro: "birth-of-planned-today-app"
   excerpt: "记录我创建 planned.today 的过程。"
   extra: "重新思考是否真的在解决痛点问题？"
+  categories: ["产品心得"]
   tags: ["创造的乐趣","planned.today"]
   cover_url: "/assets/img/dist/birth_of_planned_today_app_small.webp"
   cover_desc: "Photo by Glenn Carstens-Peters on Unsplash"

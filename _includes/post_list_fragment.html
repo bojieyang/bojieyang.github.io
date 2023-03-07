@@ -6,7 +6,7 @@
           {% break %}
         {% endif %}
       {% endif %}
-      <li>
+      <li class="fragment_item">
         <a aria-label="访问文章详情" href="{{ post.url | absolute_url }}"> {{ post.title }}</a>
         {% if include.show_category %}
           <div class="tag_item">
@@ -27,7 +27,7 @@
         <em>
           <small>&emsp;{{ post.date | timeago }}</small>
         </em>
-        <div>
+        <div class="fragment_excerpt">
           <small>{{ post.excerpt }}</small>
         </div>
       </li>

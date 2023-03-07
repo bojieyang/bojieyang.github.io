@@ -49,7 +49,7 @@ aside h3 + small {
     background-repeat: no-repeat;
     background-size: cover;   
 }
-  /* 仅在desktop browser 下启用 card 的图片动效 */
+  /* 仅在 desktop browser 下启用 card 的图片动效 */
 @media only screen and (min-width:961px) {
 
     .card_img {
@@ -76,7 +76,7 @@ aside h3 + small {
 
 
 
-/* card 下的 mark标签 用作 tag */
+/* card 下的 mark 标签 用作 tag */
 section aside mark {
     font-size: small;
     background-color: var(--color-accent);
@@ -117,6 +117,30 @@ img + em {
     position: relative;
 }
 
+.card_eyebrow {
+    text-align: center;
+    display: inline-block;
+    margin-block-start: 0.8em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.card_eyebrow > h3 {
+    text-align: center;
+    display: inline-block;
+}
+.card_eyebrow > .tag_item {
+    text-align: center;
+    //line-height: calc(var(--line-height) / 5);
+    background-color:#ff1493;
+    color:#ffffff;
+    font-size: small;
+    font-weight: lighter;
+    vertical-align:text-top;
+
+
+}
 sup.latest {
     position:absolute;
     right: -8px;
@@ -210,8 +234,16 @@ small > p {
     border-radius: var(--border-radius);
     color: var(--color-text);
     display: inline-block;
-    margin: 0 0.1rem;
-    padding: 0 0.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0.1em;
+    margin-inline-end: 0.1em;
+    //margin: 0 0.1rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    //padding: 0 0.5rem;
     //font-family: var(--font-family);
     
 
@@ -264,6 +296,13 @@ button {
     margin: 0;
 }
 
+.fragment_item {
+    padding-block-start: 0.2rem;
+    padding-block-end: 1.2rem;
+}
+.fragment_excerpt {
+    width: var(--width-post);
+}
 /*
 samp {
     background-color: var(--color-accent);
