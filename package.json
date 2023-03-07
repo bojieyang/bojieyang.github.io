@@ -1,7 +1,7 @@
 {
   "scripts": {
     "predev": "npm run squoosh",
-    "dev": "jekyll s",
+    "dev": "ifconfig -a|grep inet|grep -v 127.0.0.1|grep -v inet6|awk '{print $2}'|tr -d \"addr:\" | xargs jekyll s -H ",
     "squoosh": "scripts/squoo.sh -s ./assets/img/ -d ./assets/img/dist/"
   },
   "devDependencies": {
