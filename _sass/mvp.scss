@@ -139,25 +139,6 @@ section header {
     width: 100%;
 }
 
-/* Nav */
-nav {
-    display: flex;
-    align-items:center;
-    justify-content:space-between;
-    margin-bottom: 1rem;
-}
-
-.nav_right_region {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.nav_right_region_item {
-    margin-left: 1rem;
-    
-}
-
 /* Typography */
 code,
 samp {

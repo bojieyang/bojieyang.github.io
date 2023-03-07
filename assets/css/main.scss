@@ -254,13 +254,48 @@ small > p {
     font-weight:normal;
 }
 
+
+
 .tag_list > .tag_item {   
     margin: 0.2rem 0.2rem;
 }
 
-.nav_font {
+
+/* Nav */
+nav {
+    display: flex;
+    align-items:stretch;
+    justify-content:space-between;
+    margin-bottom: 1rem;
+    
+}
+
+.nav_item {
+}
+
+.nav_right_region {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+.nav_right_region_item {
+    margin-left: 1rem;
+    //max-width: fit-content;    
+}
+.nav_logo_font {
+    font-size: larger;
+    font-weight: normal;
+
+}
+
+.nav_right_font {
     font-size: larger;
     font-weight:normal;
+}
+
+.nav_font {  
     background:linear-gradient(45deg,#e5b751,#1677b3,#cc5595 80%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -278,7 +313,7 @@ button {
     padding-block-end: 1.2rem;
 }
 .fragment_excerpt {
-    width: 640px;
+    max-width: 640px;
 }
 
 /* support darkmode with below:
@@ -392,6 +427,6 @@ button {
 
 @media (hover: none) {
     .theme-toggle {
-        --size: 48px
+        --size: 2rem
     }
 }
