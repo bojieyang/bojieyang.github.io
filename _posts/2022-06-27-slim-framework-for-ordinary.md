@@ -4,7 +4,7 @@ title: 给普通人的瘦身减脂框架
 excerpt: "从 180 斤到 140 斤，亲身经历得出的经验，一个普通人可以执行的减脂方案。"
 categories: ['生活方式']
 tags: ['健身', '瘦身', '减脂']
-updated_at: 2022-07-15
+last_modified_at: 2022-07-15
 ---
 
 {: data-content='正文开始'}

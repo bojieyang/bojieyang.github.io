@@ -7,7 +7,7 @@ tags: ['创造的乐趣', 'planned.today']
 series: "birth_of_planned_today_app"
 paginator_enabled: false
 show_copyright_enabled: false
-updated_at: 2022-07-21
+last_modified_at: 2022-07-21
 image:
   path: "/assets/img/dist/birth_of_planned_today_app_medium.webp"
   alt: "Photo by Glenn Carstens-Peters on Unsplash"

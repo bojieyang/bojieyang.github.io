@@ -7,10 +7,10 @@ paginator_enabled: true
     <header>
       <div class="post_head">
         <small class="category_eyebrow">{{ page.categories[0] }}</small>
-        {% if page.updated_at %}
+        {% if page.last_modified_at %}
           <small>
-            <time datetime="{{- page.updated_at | date: site.date_format -}}">
-              {{- page.updated_at | date: site.date_format -}}
+            <time datetime="{{- page.last_modified_at | date: site.date_format -}}">
+              {{- page.last_modified_at | date: site.date_format -}}
             </time>
             最后更新
           </small>
