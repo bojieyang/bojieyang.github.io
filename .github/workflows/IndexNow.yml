@@ -1,0 +1,17 @@
+name: "IndexNow"
+on:
+  schedule:
+  # runs on 16:30 every day
+  - cron:  '30 16 * * *'
+
+jobs:
+  check-and-submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 
+        uses: bojieyang/indexnow-action@v1
+        with:
+          sitemap-location: "https://bojieyang.github.io/sitemap.xml"
+          since: 30
+          since-unit: "day"
+          key: ${{ secrets.INDEXNOW_KEY }}
