@@ -2,13 +2,13 @@ name: "IndexNow"
 on:
   schedule:
   # runs on 16:30 every day
-  - cron:  '30 16 * * *'
+  - cron:  '0 2 * * *'
 
 jobs:
   check-and-submit:
     runs-on: ubuntu-latest
     steps:
-      - name: 
+      - name: indexnow-action
         uses: bojieyang/indexnow-action@v1
         with:
           sitemap-location: "https://bojieyang.github.io/sitemap.xml"
