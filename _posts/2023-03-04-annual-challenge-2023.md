@@ -3,7 +3,7 @@ layout: post
 title: 2023 年度挑战
 excerpt: "2023 的年度挑战是做一百道菜。"
 categories: ['生活方式']
-tags: ["年度挑战 -2023", "烹饪"]
+tags: ["年度挑战 - 2023", "烹饪"]
 series: "annual_challenge_2023"
 paginator_enabled: false
 show_copyright_enabled: false

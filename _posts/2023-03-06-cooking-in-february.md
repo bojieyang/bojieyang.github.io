@@ -3,7 +3,7 @@ layout: post
 title: 学做菜的第一个月，比我想象的简单
 excerpt: "二月份我一共做了 16 道菜。从只会煮蛋泡面到基本半小时内搞定一道简易菜；从家里只有盐和酱油到现在有十多种不同的调料；点外卖和在餐馆吃饭的次数用两只手也能数得清了。"
 categories: ['生活方式']
-tags: ["年度挑战 -2023", "烹饪"]
+tags: ["年度挑战 - 2023", "烹饪"]
 series: "annual_challenge_2023"
 image:
   path: "/assets/img/dist/my_best_cooking_of_february.webp"
