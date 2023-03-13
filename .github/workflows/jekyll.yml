@@ -4,7 +4,7 @@
 # documentation.
 
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll site to Pages
+name: Deploy the Blog
 
 on:
   # Runs on pushes targeting the default branch
@@ -12,7 +12,7 @@ on:
     branches: ["master"]
   #  Runs on 0 AM every day of GMT+8 
   schedule:
-  - cron: "0 16 * * *"
+  - cron: "10 0 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

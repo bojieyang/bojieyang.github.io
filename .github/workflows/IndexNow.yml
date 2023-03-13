@@ -1,8 +1,8 @@
 name: "IndexNow"
 on:
   schedule:
-  # runs on 16:30 every day
-  - cron:  '0 2 * * *'
+  # Scheduled in UTC.
+  - cron:  '20 0 * * *'
 
 jobs:
   check-and-submit:
@@ -12,6 +12,6 @@ jobs:
         uses: bojieyang/indexnow-action@v1
         with:
           sitemap-location: "https://bojieyang.github.io/sitemap.xml"
-          since: 30
+          since: 1
           since-unit: "day"
           key: ${{ secrets.INDEXNOW_KEY }}
