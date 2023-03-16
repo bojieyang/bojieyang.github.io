@@ -398,7 +398,7 @@ button {
   }
 
   .theme-toggle {
-    --size: 2rem;
+    --size: 24px;
     --icon-fill: hsl(210 10% 30%);
     --icon-fill-hover: hsl(210 10% 15%);
     background: none;
@@ -427,6 +427,6 @@ button {
 
 @media (hover: none) {
     .theme-toggle {
-        --size: 2rem
+        --size: 24px
     }
 }
