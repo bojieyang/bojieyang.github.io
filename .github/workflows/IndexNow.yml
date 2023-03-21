@@ -2,7 +2,7 @@ name: "IndexNow"
 on:
   schedule:
   # Scheduled in UTC.
-  - cron:  '20 0 * * *'
+  - cron:  '0 0,12 * * *'
 
 jobs:
   check-and-submit:
