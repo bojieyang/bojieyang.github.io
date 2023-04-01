@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: indexnow-action
-        uses: bojieyang/indexnow-action@v1
+        uses: bojieyang/indexnow-action@v1.1.0 # try 1.1.0 here, generally should be @v1
         with:
           sitemap-location: "https://bojieyang.github.io/sitemap.xml"
           since: 1
