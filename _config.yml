@@ -54,9 +54,6 @@ clarity_enable: true
 webmaster_verifications:
   google: JMoUarH8fRcCgrUK6azhvne5g6Pi0qA5j7yOW3cUyKk
 
-feed:
-  excerpt_only: true
-
 seo_tag_enable: true
 
 kramdown:
