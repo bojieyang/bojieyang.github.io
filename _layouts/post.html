@@ -8,19 +8,22 @@ paginator_enabled: true
       <div class="post_head">
         <small class="category_eyebrow">{{ page.categories[0] }}</small>
         {% if page.last_modified_at %}
-          <small>
+          <small class="category_eyebrow">
             <time datetime="{{- page.last_modified_at | date: site.date_format -}}">
               {{- page.last_modified_at | date: site.date_format -}}
             </time>
             最后更新
           </small>
         {% else %}
-          <small>
+          <small class="category_eyebrow">
             <time datetime="{{- page.date | date: site.date_format -}}">
               {{- page.date | date: site.date_format -}}
             </time>
           </small>
         {% endif %}
+        <small class="category_eyebrow">
+          {% include ert.html %}
+        </small>
         <h1>{{ page.title }}</h1>
         <div class="post_excerpt">
           {{ page.excerpt }}
@@ -55,8 +58,8 @@ paginator_enabled: true
         <header>
           <small
             ><span style="font-family:arial;">&copy;</span>
-            本文版权使用<a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a
-            >(自由转载-非商用-非衍生-保持署名)</small
+            本文版权使用<a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享 3.0 许可证</a
+            >(自由转载 - 非商用 - 非衍生 - 保持署名)</small
           >
         </header>
         <hr>

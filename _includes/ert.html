@@ -1,0 +1,7 @@
+<!-- estimate reading time -->
+{% capture words %}
+{{ content | strip_html | number_of_words: "auto" }}
+{% endcapture %}
+
+{% assign ert = words | divided_by: 250.0 | at_least: 1.0 | round %}
+约 {{ ert }} 分钟
