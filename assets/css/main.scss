@@ -172,7 +172,7 @@ sup.suspend {
     margin-block-start: 0.1em;  
 }
 
-.category_eyebrow::after {
+.category_eyebrow::before {
     content: "\2022";
     font-family: inherit;
     color: var(--color-text-secondary);
@@ -286,7 +286,8 @@ nav {
 }
 .nav_logo_font {
     font-size: larger;
-    font-weight: normal;
+    font-weight: bolder;
+    color:#764abc;
 
 }
 
@@ -295,7 +296,7 @@ nav {
     font-weight:normal;
 }
 
-.nav_font {  
+.title_font {  
     background:linear-gradient(45deg,#e5b751,#1677b3,#cc5595 80%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -330,7 +331,7 @@ button {
   }
   
   .theme-toggle:is(:hover, :focus-visible) > .sun-and-moon > :is(.moon, .sun) {
-    fill: var(--icon-fill-hover);
+   fill: var(--icon-fill-hover);
   }
   
   .sun-and-moon > .sun-beams {
@@ -399,8 +400,8 @@ button {
 
   .theme-toggle {
     --size: 24px;
-    --icon-fill: hsl(210 10% 30%);
-    --icon-fill-hover: hsl(210 10% 15%);
+    --icon-fill:#764abc;
+    --icon-fill-hover: #a277e8;
     background: none;
     border: none;
     padding: 0;

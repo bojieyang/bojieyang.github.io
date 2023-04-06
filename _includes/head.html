@@ -7,30 +7,32 @@
     <meta name="robots" content="noindex">
   {% endif %}
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link
-    rel="icon"
-    href="{{ site.favicon | relative_url }}"
-    sizes="any"
-    type="image/svg+xml"
-  >
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
   <!-- prefetch and preconnect -->
   <link rel="dns-prefetch" href="cdn.staticfile.org">
   <link rel="preconnect" href="cdn.staticfile.org" crossorigin>
 
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
-  {% feed_meta %}
-
+  <link
+    type="application/atom+xml"
+    rel="alternate"
+    href="{{ "/feed.xml" | absolute_url }}"
+    title="{{ site.title | smartify }}"
+  >
+  <title>
+    {%- if page.title -%}
+      {{ page.title | smartify }}
+    {%- else -%}
+      {{ site.title | smartify }}
+    {%- endif -%}
+  </title>
   {%- if site.seo_tag_enable -%}
-    {% seo %}
-  {%- else -%}
-    <title>
-      {%- if page.title -%}
-        {{ page.title }}
-      {%- else -%}
-        {{ site.title }}
-      {%- endif -%}
-    </title>
+    {% seo title=false %}
   {%- endif -%}
 
   {%- if jekyll.environment == 'production' and site.google_analytics_enable -%}
