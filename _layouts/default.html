@@ -7,6 +7,9 @@
     {%- include header.html -%}
     {{ content }}
     {%- include footer.html -%}
+
+    {% include quicklink.html %}
+
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
         <script

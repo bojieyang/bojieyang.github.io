@@ -1,0 +1,9 @@
+<script src="https://cdn.staticfile.org/quicklink/2.3.0/quicklink.umd.min.js" />
+
+<script>
+  window.addEventListener('load', () => {
+    quicklink.listen({
+      ignores: [(uri) => uri.includes('#'), (uri, elem) => elem.hasAttribute('noprefetch')],
+    });
+  });
+</script>
