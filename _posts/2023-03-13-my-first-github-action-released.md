@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 我的第一个 Github Action 发布了
+title: 我的第一个 GitHub Action 发布了
 excerpt: 记录我开发并上架第一个 GitHub Action 的过程和从其中学到的东西
 categories: ['产品心得']
-tags: ['SEO', 'IndexNow', 'GitHub Action', "IndexNow Action"]
+tags: ['SEO', 'IndexNow', 'GitHub Action', 'IndexNow Action']
 image:
   path: "/assets/img/dist/indexnow_action_released.webp"
   alt: "Photo by my screenshot"
@@ -14,7 +14,7 @@ image:
 
 * toc 
 {:toc}
-## 背景
+# 背景
 
 事情的起因是由于 new Bing 整合的 ChatGPT 很好用，让我使用的频率增加了很多。于是我就把博客加入了 Bing Webmaster Tools，然后在其中发现了`IndexNow`这个工具。
 
@@ -26,19 +26,19 @@ image:
 
 于是我想到可以退而求其次，通过 GitHub Action 来实现这个功能。这样除了让我可以用熟悉的语言来开发，还有几个额外的好处：
 
-- **不限制网站框架与部署环境**。由于 Github Action 的代码执行环境与任务调度都是独立的，与网站本身是分离的，因此不依赖任何网站框架。基于 Jekyll, Hugo, Hexo，Nextjs，WordPress 等框架构建的网站都可以使用。也不限制部署环境，无论是 静态网站 还是 动态网站 都可以使用。
+- **不限制网站框架与部署环境**。由于 GitHub Action 的代码执行环境与任务调度都是独立的，与网站本身是分离的，因此不依赖任何网站框架。基于 Jekyll, Hugo, Hexo，Nextjs，WordPress 等框架构建的网站都可以使用。也不限制部署环境，无论是 静态网站 还是 动态网站 都可以使用。
 
 - **可以和其他 Workflow 集成**。它被设计成既可以单独使用，也可以作为其他 Workflow 的其中一个 Step 执行。
 
 于是说做就做，我花了几天时间，开发了 `IndexNow Action`，目前已经在我的博客上使用起来了。同时也发布到了 GitHub Marketplace，其他人也可以使用。
 
-## 使用方式简介
+# 使用方式简介
 
 使用方式很简单，在博客里我就简单介绍一下，完整文档可以去[官方地址][]查看。
 
 ```yaml
 {% raw %}
-# 只要在你的 Github workflow 中加入以下 step 就可以使用了。
+# 只要在你的 GitHub workflow 中加入以下 step 就可以使用了。
 steps:
   
   - uses: bojieyang/indexnow-action@v1 # v1 is the latest major version following the action-versioning.
@@ -48,14 +48,14 @@ steps:
 {% endraw %}
 ```
 
-## 我从中学到的东西
+# 我从中学到的东西
 
-### 预期花费天数要乘以三
+## 预期花费天数要乘以三
 我原本认为我基本上用一天时间就可以完成功能开发和验证，但实际上花了 3 天，其中一天还搞到了凌晨 3 点多（见令人抓狂的小插曲部分）。原因是我自以为懂`javascript`，但实际上我从没在工作中用过这门语言，远远谈不上熟练。因此在开发时各种查语法，查 API 的用法花费了很多时间。再加上低估了写使用文档的时间，让我的实际投入时间大概是预估的三倍多。
 
 总之，实际做起来，就会出现各种预期之外的情况，整体上会比预想的花费时间要多很多。因此要留足缓冲时间，以免到时手忙脚乱。
 
-### 在下一个项目使用 typescript，无论项目大小
+## 在下一个项目使用 typescript，无论项目大小
 
 我在初始化项目时是用的官方工程模版，官方其实提供了 2 个模版，一个是 `javascript-action`, 另一个是`typescript-action`，我选择了`javascript-action`，原因是我以为代码量很少，体现不出 typescript 静态类型检查的优势，编写类型声明相关代码反而会让编码更繁琐。
 
@@ -63,7 +63,7 @@ steps:
 
 这还是一个非常小的项目，动态类型检查对效率的负面影响就已经到了能够感知到的程度。如果是更大的项目，本该在编译时解决的问题被拖到运行时，所浪费的时间会更多。
 
-### 产品的美在于统一，统一要靠规范
+## 产品的美在于统一，统一要靠规范
 
 GitHub 对规范的重视程度让我吃惊。由于我打算让其他人也能使用这个工具，因此就需要写`README`介绍使用方法。
 
@@ -75,7 +75,7 @@ GitHub 对规范的重视程度让我吃惊。由于我打算让其他人也能�
 
 在各种细节层面制定规范已经很不容易做到了，GitHub 厉害的地方在于，它让整个社区都能很好的遵循规范，从而让这个社区体现出一种统一的美感。要知道这是一个全球性的社区，其中的难度不言而喻。
 
-## 令人抓狂的小插曲
+# 令人抓狂的小插曲
 
 是什么事情让我凌晨 3 点还在熬夜呢。就是官方模版克隆下来的项目提交到 Workflow 上死活跑不通。
 
