@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.1"
 gem "liquid", "~> 4.0.4"
-gem "activesupport", ">= 7.0.4.3"
+gem "activesupport", ">= 7.0.7.1"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 #gem "minima", "~> 2.5"
 
@@ -26,7 +26,7 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag","~>2.8.0"
   gem 'jekyll-sitemap', '~> 1.4'
   gem 'kramdown-parser-gfm', '~> 1.1'
-  gem 'jemoji', '~> 0.12.0'
+  gem 'jemoji', '~> 0.13.0'
   gem 'jekyll-timeago'
 end
 
