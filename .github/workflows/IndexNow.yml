@@ -3,6 +3,9 @@ on:
   schedule:
   # Scheduled in UTC.
   - cron:  '0 0,12 * * *'
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   check-and-submit:
