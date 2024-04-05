@@ -7,7 +7,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.3.1"
+gem "jekyll", "~> 4.3.3"
 gem "liquid", "~> 4.0.4"
 gem "activesupport", ">= 7.0.7.1"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
@@ -16,7 +16,7 @@ gem "activesupport", ">= 7.0.7.1"
 #gem "jekyll-remote-theme", '~>0.4.3'
 #gem 'i18n', '~> 1.8.11'
 #gem "webrick", "~> 1.7"
-gem "nokogiri", ">= 1.14.3"
+gem "nokogiri", ">= 1.15.6"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
