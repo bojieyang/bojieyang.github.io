@@ -2,8 +2,8 @@
 layout: post
 title: 从使用机场到自建服务
 excerpt: "从使用机场到自建服务，从 openclash 到 sing-box，到目前为止感觉良好。"
-categories: ['生活方式']
-tags: ['生活方式', '科学上网']
+categories: ['互联网']
+tags: ['互联网', '科学上网']
 image:
   path: "/assets/img/dist/from-using-line-providers-to-self-hosting.webp"
   alt: "Generated with Microsoft Copilot"
