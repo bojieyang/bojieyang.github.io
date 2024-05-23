@@ -5,6 +5,7 @@ excerpt: "从用户故事中归纳目标用户，确定各自的使用场景。"
 categories: ['产品心得']
 tags: ['创造的乐趣', 'planned.today', '用户故事']
 series: "birth_of_planned_today_app"
+canonical_url: 'https://raving.me/posts/explore-target-users-and-usage-scenarios-from-user-stories'
 ---
 
 {: data-content='正文开始'}

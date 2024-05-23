@@ -7,6 +7,7 @@ tags: ['SEO', 'IndexNow', 'GitHub Action', 'IndexNow Action']
 image:
   path: "/assets/img/dist/indexnow_action_released.webp"
   alt: "Photo by my screenshot"
+canonical_url: 'https://raving.me/posts/my-first-github-action-released'
 ---
 
 

@@ -5,6 +5,7 @@ excerpt: "短期来看，存在一个新冠防疫政策转向带来的，持续�
 categories: ['投资']
 tags: ['投资', '投资备忘录']
 series: "invest_memo"
+canonical_url: 'https://raving.me/posts/short-term-risks-eliminated-but-long-term-risks-remain'
 ---
 
 {: data-content='正文开始'}

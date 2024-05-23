@@ -8,6 +8,7 @@ series: "invest_memo"
 image:
   path: "/assets/img/dist/holding_is_buying.webp"
   alt: "Photo by Kelly Sikkema on Unsplash"
+canonical_url: 'https://raving.me/posts/holding-is-buying'
 ---
 
 
