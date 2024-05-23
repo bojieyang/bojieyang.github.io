@@ -16,7 +16,8 @@ gem "activesupport", ">= 7.0.7.1"
 #gem "jekyll-remote-theme", '~>0.4.3'
 #gem 'i18n', '~> 1.8.11'
 #gem "webrick", "~> 1.7"
-gem "nokogiri", ">= 1.15.6"
+gem "nokogiri", "~> 1.16.5"
+gem 'rexml', '~> 3.2', '>= 3.2.8'
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
