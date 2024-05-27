@@ -7,7 +7,7 @@ tags: ['互联网', '科学上网']
 image:
   path: "/assets/img/dist/from-using-line-providers-to-self-hosting.webp"
   alt: "Generated with Microsoft Copilot"
-canonical_url: 'https://raving.me/posts/from-using-line-providers-to-self-hosting'
+canonical_url: 'https://raving.me/posts/from-using-line-providers-to-self-hosting/'
 ---
 
 {: data-content='正文开始'}

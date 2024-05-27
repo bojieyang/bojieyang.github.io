@@ -6,7 +6,7 @@ categories: ['投资']
 tags: ['投资', '发现十倍股']
 series: "find_tenfold_stocks"
 series_order: 3
-canonical_url: 'https://raving.me/posts/find-second-growth-curve-tenfold-stocks'
+canonical_url: 'https://raving.me/posts/find-second-growth-curve-tenfold-stocks/'
 ---
 
 {: data-content='正文开始'}

@@ -4,7 +4,7 @@ title: Netflix 的反馈原则
 excerpt: "Netflix 的 4A 反馈原则，同时适用于反馈双方，简单有效。"
 categories: ['个人成长']
 tags: ['读书笔记','自由与责任', '不拘一格']
-canonical_url: 'https://raving.me/posts/netflix-feedback-principle'
+canonical_url: 'https://raving.me/posts/netflix-feedback-principle/'
 ---
 
 {: data-content='正文开始'}
