@@ -4,7 +4,7 @@ title: 用睡到自然醒的方式早起
 excerpt: "如果你也总是早上起床后精神不佳，效率全无，不妨试试这个方法。"
 categories: ['生活方式']
 tags: ['睡眠质量','早起']
-canonical_url: 'https://raving.me/posts/wake-up-early-the-natural-way/'
+canonical_url: 'https://bojie.site/posts/wake-up-early-the-natural-way/'
 ---
 
 {: data-content='正文开始'}

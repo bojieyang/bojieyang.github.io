@@ -8,7 +8,7 @@ series: "annual_challenge_2023"
 image:
   path: "/assets/img/dist/my_best_cooking_of_february.webp"
   alt: "My Best Cooking of February"
-canonical_url: 'https://raving.me/posts/cooking-in-february/'
+canonical_url: 'https://bojie.site/posts/cooking-in-february/'
 ---
 
 {: data-content='正文开始'}

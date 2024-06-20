@@ -11,7 +11,7 @@ last_modified_at: 2022-07-21
 image:
   path: "/assets/img/dist/birth_of_planned_today_app_medium.webp"
   alt: "Photo by Glenn Carstens-Peters on Unsplash"
-canonical_url: 'https://raving.me/posts/birth-of-planned-today-app/'
+canonical_url: 'https://bojie.site/posts/birth-of-planned-today-app/'
 ---
 
 {: data-content='正文开始'}

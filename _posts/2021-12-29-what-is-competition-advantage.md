@@ -7,7 +7,7 @@ tags: ["投资", "读书笔记"]
 book:
   name: "《竞争优势：透视企业护城河》"
   isbn: 9787111686439
-canonical_url: 'https://raving.me/posts/what-is-competition-advantage/'
+canonical_url: 'https://bojie.site/posts/what-is-competition-advantage/'
 ---
 
 {: data-content='正文开始'}

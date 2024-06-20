@@ -6,7 +6,7 @@ categories: ['产品心得']
 tags: ['创造的乐趣', 'planned.today']
 series: "birth_of_planned_today_app"
 last_modified_at: 2022-07-21
-canonical_url: 'https://raving.me/posts/why-build-planned-today-app/'
+canonical_url: 'https://bojie.site/posts/why-build-planned-today-app/'
 ---
 
 {: data-content='正文开始'}

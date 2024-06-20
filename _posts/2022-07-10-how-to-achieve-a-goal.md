@@ -5,7 +5,7 @@ excerpt: "我们总是心血来潮设立一个目标，然后就没有然后了�
 description: 只有真正明白了目标对自己的意义，才会有持久的动力
 categories: ['个人成长']
 tags: ['个人成长', '达成目标', '方法论']
-canonical_url: 'https://raving.me/posts/how-to-achieve-a-goal/'
+canonical_url: 'https://bojie.site/posts/how-to-achieve-a-goal/'
 ---
 
 {: data-content='正文开始'}

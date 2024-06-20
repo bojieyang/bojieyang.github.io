@@ -8,7 +8,7 @@ series: "invest_memo"
 image:
   path: "/assets/img/dist/be_wary_of_metanarratives_without_solid_foundations.webp"
   alt: "Photo by Matt Cramblett on Unsplash"
-canonical_url: 'https://raving.me/posts/be-wary-of-metanarratives-without-solid-foundations/'
+canonical_url: 'https://bojie.site/posts/be-wary-of-metanarratives-without-solid-foundations/'
 ---
 
 {: data-content='正文开始'}

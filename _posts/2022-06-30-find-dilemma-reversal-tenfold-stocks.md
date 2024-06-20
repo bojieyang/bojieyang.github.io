@@ -6,7 +6,7 @@ categories: ['投资']
 tags: ['投资', '发现十倍股']
 series: "find_tenfold_stocks"
 series_order: 4
-canonical_url: 'https://raving.me/posts/find-dilemma-reversal-tenfold-stocks/'
+canonical_url: 'https://bojie.site/posts/find-dilemma-reversal-tenfold-stocks/'
 ---
 
 {: data-content='正文开始'}

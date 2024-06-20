@@ -11,7 +11,7 @@ show_copyright_enabled: false
 image:
   path: "/assets/img/dist/find_tenfold_stocks_medium.webp"
   alt:  "Photo by Isaac Smith on Unsplash"
-canonical_url: 'https://raving.me/posts/find-tenfold-stocks/'
+canonical_url: 'https://bojie.site/posts/find-tenfold-stocks/'
 ---
 
 {: data-content='正文开始'}
