@@ -6,7 +6,7 @@ categories: ['投资']
 tags: ['投资', '发现十倍股']
 series: "find_tenfold_stocks"
 series_order: 2
-canonical_url: 'https://bojie.site/posts/find-innovative-growth-tenfold-stocks/'
+canonical_url: 'https://bojie.site/posts/2022-06-28/'
 ---
 
 {: data-content='正文开始'}

@@ -7,7 +7,7 @@ tags: ['健身', '瘦身', '减脂']
 image:
   path: "/assets/img/dist/a_few_life_hacks_keep_me_slim.webp"
   alt: "Photo by Gabin Vallet on Unsplash"
-canonical_url: 'https://bojie.site/posts/a-few-life-hacks-keep-me-slim/'
+canonical_url: 'https://bojie.site/posts/2023-03-20/'
 ---
 
 {: data-content='正文开始'}

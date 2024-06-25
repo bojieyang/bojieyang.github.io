@@ -7,7 +7,7 @@ tags: ['读书笔记', '职业发展']
 image:
   path: "/assets/img/dist/10k_matrix.webp"
   alt: "Photo from https://radreads.co/10k-work/"
-canonical_url: 'https://bojie.site/posts/leverage-your-skills/'
+canonical_url: 'https://bojie.site/posts/2023-05-26/'
 ---
 
 

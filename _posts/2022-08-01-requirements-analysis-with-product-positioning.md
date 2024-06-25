@@ -6,7 +6,7 @@ categories: ['产品心得']
 tags: ['创造的乐趣', 'planned.today', '需求分析', '产品定位', '产品切入点']
 series: "birth_of_planned_today_app"
 mermaid: true
-canonical_url: 'https://bojie.site/posts/requirements-analysis-with-product-positioning/'
+canonical_url: 'https://bojie.site/posts/2022-08-01/'
 ---
 
 {: data-content='正文开始'}

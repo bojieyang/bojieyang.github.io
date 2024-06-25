@@ -11,7 +11,7 @@ show_copyright_enabled: false
 image:
   path: "/assets/img/dist/invest_memo_medium.webp"
   alt: "Photo by Jordan Madrid on Unsplash"
-canonical_url: 'https://bojie.site/posts/invest-memo/'
+canonical_url: 'https://bojie.site/posts/2022-12-04/'
 ---
 
 {: data-content='正文开始'}

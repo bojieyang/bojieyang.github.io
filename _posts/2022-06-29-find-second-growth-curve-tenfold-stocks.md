@@ -6,7 +6,7 @@ categories: ['投资']
 tags: ['投资', '发现十倍股']
 series: "find_tenfold_stocks"
 series_order: 3
-canonical_url: 'https://bojie.site/posts/find-second-growth-curve-tenfold-stocks/'
+canonical_url: 'https://bojie.site/posts/2022-06-29/'
 ---
 
 {: data-content='正文开始'}

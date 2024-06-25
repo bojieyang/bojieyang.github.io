@@ -4,7 +4,7 @@ title: "重构个人网站并启用新域名"
 excerpt: "全面拥抱 Node.js 生态"
 categories: ['互联网']
 tags: ['Astro', 'Cloudflare Pages']
-canonical_url: 'https://bojie.site/posts/refactor-website/'
+canonical_url: 'https://bojie.site/posts/2024-06-20/'
 ---
 
 {: data-content='正文开始'}

@@ -4,7 +4,7 @@ title: 为什么我们想要 Web3
 excerpt: "什么是 Web3？它能带来哪些好处？我们需要它吗？"
 categories: ['互联网']
 tags: ['web3', '互联网']
-canonical_url: 'https://bojie.site/posts/why-we-want-web3/'
+canonical_url: 'https://bojie.site/posts/2022-07-07/'
 ---
 
 {: data-content='正文开始'}

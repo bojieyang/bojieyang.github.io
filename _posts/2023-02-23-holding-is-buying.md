@@ -8,7 +8,7 @@ series: "invest_memo"
 image:
   path: "/assets/img/dist/holding_is_buying.webp"
   alt: "Photo by Kelly Sikkema on Unsplash"
-canonical_url: 'https://bojie.site/posts/holding-is-buying/'
+canonical_url: 'https://bojie.site/posts/2023-02-23/'
 ---
 
 

@@ -5,7 +5,7 @@ excerpt: "从 180 斤到 140 斤，亲身经历得出的经验，一个普通人
 categories: ['生活方式']
 tags: ['健身', '瘦身', '减脂']
 last_modified_at: 2022-07-15
-canonical_url: 'https://bojie.site/posts/slim-framework-for-ordinary/'
+canonical_url: 'https://bojie.site/posts/2022-06-27/'
 ---
 
 {: data-content='正文开始'}

@@ -4,7 +4,7 @@ title: 如何提高执行力
 excerpt: "如果你经常感到无所事事，也许这篇文章能帮到你。"
 categories: ['个人成长']
 tags: ['个人成长', '目标','执行力']
-canonical_url: 'https://bojie.site/posts/how-to-improve-executive/'
+canonical_url: 'https://bojie.site/posts/2022-07-14/'
 ---
 
 {: data-content='正文开始'}

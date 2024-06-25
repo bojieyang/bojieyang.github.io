@@ -10,7 +10,7 @@ show_copyright_enabled: false
 image:
   path: "/assets/img/dist/annual_challenge_2023.webp"
   alt: "Photo by Chinh Le Duc on Unsplash"
-canonical_url: 'https://bojie.site/posts/annual-challenge-2023/'
+canonical_url: 'https://bojie.site/posts/2023-03-04/'
 ---
 
 {: data-content='正文开始'}
