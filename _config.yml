@@ -6,7 +6,7 @@
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'bundle exec Jekyll serve'. If you change this file, please restart the server process.
 #
 # If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
@@ -47,11 +47,10 @@ locale: zh-CN
 date_format: "%Y 年 %m 月 %d 日"
 #date_format: "%Y-%m-%d"
 google_analytics: G-0GENL6L0S9
-google_analytics_enable: true
+google_analytics_enable: false
 clarity_enable: true
 webmaster_verifications:
-  google: JMoUarH8fRcCgrUK6azhvne5g6Pi0qA5j7yOW3cUyKk
-
+  bing: 8F8E76283070B400C76896F1081F5317
 seo_tag_enable: true
 
 kramdown:
