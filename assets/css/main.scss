@@ -2,9 +2,9 @@
 
 ---
 
-@import "mvp";
-@import "syntax";
-@import "easings";
+@use "mvp";
+@use "syntax";
+@use "easings";
 #markdown-toc::before {
     content: "目录";
     font-family: inherit;
