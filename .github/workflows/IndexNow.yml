@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: indexnow-action
-        uses: bojieyang/indexnow-action@v2
+        uses: bojieyang/indexnow-action@v3
         with:
           sitemap-location: "https://bojieyang.github.io/sitemap.xml"
-          since: 1
+          since: 3
           since-unit: "day"
           key: ${{ secrets.INDEXNOW_KEY }}

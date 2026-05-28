@@ -11,3 +11,4 @@ public
 .vercel
 .npmrc
 .autocorrectrc
+.autocorrectignore
